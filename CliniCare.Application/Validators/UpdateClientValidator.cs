@@ -13,8 +13,8 @@ namespace CliniCare.Application.Validators
         public UpdateClientValidator()
         {
             RuleFor(c => c.Name)
-                .NotNull()
-                .WithMessage("O nome não pode ser nulo.")
+                .NotEmpty()
+                .WithMessage("O nome não pode ser vazio.")
                 .MaximumLength(50)
                 .WithMessage("O nome não pode ter mais de 50 caracteres.");
 

@@ -10,7 +10,7 @@ namespace CliniCare.Domain.Repositories
     public interface IClientRepository
     {
         Task AddClientAsync(Client client);
-        Task<Client> UpdateClientAsync (Client client);
+        void UpdateClient(Client client);
         Task<IEnumerable<Client>> GetAllClientAsync();
         Task<Client> GetCurrentClientAsync(int userId);
         Task<Client> GetClientByIdAsync (int id);

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CliniCare.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class AddRepository : Migration
+    public partial class Inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -299,7 +299,7 @@ namespace CliniCare.Infrastructure.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ClientId = table.Column<int>(type: "int", nullable: false),
                     AnimalId = table.Column<int>(type: "int", nullable: false),
-                    ServiceId = table.Column<int>(type: "int", nullable: false),
+                    ProcedureId = table.Column<int>(type: "int", nullable: false),
                     VeterinarianId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -324,8 +324,8 @@ namespace CliniCare.Infrastructure.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Schedulings_VeterinaryProcedures_ServiceId",
-                        column: x => x.ServiceId,
+                        name: "FK_Schedulings_VeterinaryProcedures_ProcedureId",
+                        column: x => x.ProcedureId,
                         principalTable: "VeterinaryProcedures",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -423,9 +423,9 @@ namespace CliniCare.Infrastructure.Migrations
                 column: "ClientId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Schedulings_ServiceId",
+                name: "IX_Schedulings_ProcedureId",
                 table: "Schedulings",
-                column: "ServiceId");
+                column: "ProcedureId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Schedulings_VeterinarianId",

@@ -3,6 +3,7 @@ using CliniCare.Application.Helpers;
 using CliniCare.Application.InputModels.Client;
 using CliniCare.Application.Services.Interfaces;
 using CliniCare.Application.ViewModels;
+using CliniCare.Domain.Interfaces;
 using CliniCare.Domain.Models;
 using CliniCare.Domain.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -22,19 +23,22 @@ namespace CliniCare.Application.Services.Implementations
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IJwtService _jwtService;
+        private readonly IUnitOfWork _unitOfWork;
 
         public ClientService(
             IClientRepository clientRepository,
             UserManager<ApplicationUser> userManager, 
             SignInManager<ApplicationUser> signInManager,
             IHttpContextAccessor httpContextAccessor, 
-            IJwtService jwtService)
+            IJwtService jwtService,
+            IUnitOfWork unitOfWork)
         {
             _clientRepository = clientRepository;
             _userManager = userManager;
             _signInManager = signInManager;
             _httpContextAccessor = httpContextAccessor;
             _jwtService = jwtService;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<Result> CreateClientAsync(CreateClientInputModel createClientInputModel)
@@ -62,14 +66,27 @@ namespace CliniCare.Application.Services.Implementations
 
             var client = new Client
             {
+                Name = createClientInputModel.Name,
                 CPF = createClientInputModel.CPF,
                 Address = createClientInputModel.Address,
                 ApplicationUserId = user.Id
             };
 
-            await _clientRepository.AddClientAsync(client);
+            try
+            {
+                await _unitOfWork.Clients.AddClientAsync(client);
+                var success = await _unitOfWork.CommitAsync();
+                if (!success)
+                {
+                    return Result.Failure("Erro ao salvar os dados.");
+                }
 
-            return Result.Success("Cliente registrado com sucesso!");
+                return Result.Success("Cliente registrado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                return Result.Failure($"Erro: {ex.Message}");
+            }
         }
 
         public async Task<IEnumerable<ClientViewModel>> GetAllClientsAsync()
@@ -102,6 +119,7 @@ namespace CliniCare.Application.Services.Implementations
 
             return new ClientViewModel
             {
+                Id = id,
                 Address = user.Address,
                 Email = user.ApplicationUser.Email,
                 Phone = user.ApplicationUser.PhoneNumber,
@@ -128,6 +146,7 @@ namespace CliniCare.Application.Services.Implementations
 
                 var clientViewModel = new ClientViewModel
                 {
+                    Id = userId,
                     Name = userLogado.Name,
                     Email = userLogado.ApplicationUser.Email,
                     Phone = userLogado.ApplicationUser.PhoneNumber,
@@ -157,9 +176,9 @@ namespace CliniCare.Application.Services.Implementations
                 return Result.Failure("Tentativa de login inválida.");
             }
             var role = await _userManager.GetRolesAsync(user);
-            var token = _jwtService.GerarJwt(user, role);
+            var token = await _jwtService.GerarJwt(user, role);
 
-            return Result.Success("Login realizado com sucesso!");
+            return Result.Success(token);
         }
 
         public async Task<Result> UpdateClientAsync(UpdateClientInputModel updateClientInputModel)
@@ -187,10 +206,11 @@ namespace CliniCare.Application.Services.Implementations
             userLogado.Name = updateClientInputModel.Name;
             userLogado.Address = updateClientInputModel.Address;
 
-            
-            var updatedClient = await _clientRepository.UpdateClientAsync(userLogado);
 
-            if (updatedClient == null)
+            _unitOfWork.Clients.UpdateClient(userLogado);
+            var updatedClient = await _unitOfWork.CommitAsync();
+
+            if (!updatedClient)
             {
                 return Result.Failure("Não foi possível realizar modificações.");
             }
@@ -206,11 +226,14 @@ namespace CliniCare.Application.Services.Implementations
             {
                 return Result.Failure("Não foi encontrado nenhum cliente com esse id.");
             }
+
             user.Address = updateClientInputModel.Address;
             user.Name = updateClientInputModel.Name;
 
-            var updatedClient = await _clientRepository.UpdateClientAsync(user);
-            if (updatedClient == null)
+            _unitOfWork.Clients.UpdateClient(user);
+           var updatedClient = await _unitOfWork.CommitAsync();
+
+            if (!updatedClient)
             {
                 return Result.Failure("Falha ao atualizar cliente!");
             }

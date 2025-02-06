@@ -10,3 +10,4 @@ C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\Clin
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\refint\CliniCare.Domain.dll
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.pdb
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\ref\CliniCare.Domain.dll
+C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.sourcelink.json

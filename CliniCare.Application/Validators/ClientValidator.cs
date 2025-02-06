@@ -13,10 +13,13 @@ namespace CliniCare.Application.Validators
         public ClientValidator()
         {
             RuleFor(c => c.Name)
-                .NotNull()
-                .WithMessage("O nome não pode ser nulo.")
+                .NotEmpty()
+                .WithMessage("O nome é obrigatório")
                 .MaximumLength(50)
                 .WithMessage("O nome não pode ter mais de 50 caracteres.");
+            RuleFor(c => c.Phone)
+                .NotEmpty()
+                .WithMessage("Telefone não pode ser vazio e é obrigatório!");
 
             RuleFor(c => c.CPF)
                 .NotEmpty().WithMessage("O CPF é obrigatório.")

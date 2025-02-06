@@ -10,7 +10,8 @@ namespace CliniCare.Domain.Models
     {
         public int Id { get; set; }
         public string CRMV { get; set; }
-        public int Specialty { get; set; }
+        public string Name { get; set; }
+        public string Specialty { get; set; }
         public int ApplicationUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
     }

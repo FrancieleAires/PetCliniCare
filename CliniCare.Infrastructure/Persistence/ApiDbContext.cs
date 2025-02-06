@@ -20,7 +20,7 @@ namespace CliniCare.Infrastructure.Persistence
         public DbSet<Client> Clients { get; set; }
         public DbSet<VeterinaryCare> VeterinaryCares { get; set; }
         public DbSet<Procedure> VeterinaryProcedures { get; set; }
-        public DbSet<Role> Roles { get; set; }
+        public DbSet<Role> Roles {  get; set; }
         public DbSet<Scheduling> Schedulings { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

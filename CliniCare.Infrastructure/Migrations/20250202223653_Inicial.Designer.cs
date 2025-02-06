@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CliniCare.Infrastructure.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20250129121927_AddRepository")]
-    partial class AddRepository
+    [Migration("20250202223653_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -160,6 +160,30 @@ namespace CliniCare.Infrastructure.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("CliniCare.Domain.Models.Procedure", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double");
+
+                    b.Property<string>("ServiceName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VeterinaryProcedures");
+                });
+
             modelBuilder.Entity("CliniCare.Domain.Models.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -207,6 +231,9 @@ namespace CliniCare.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("ProcedureId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("SchedulingDate")
                         .HasColumnType("datetime(6)");
 
@@ -214,9 +241,6 @@ namespace CliniCare.Infrastructure.Migrations
                         .HasColumnType("time(6)");
 
                     b.Property<int>("SchedulingsStatus")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ServiceId")
                         .HasColumnType("int");
 
                     b.Property<int>("VeterinarianId")
@@ -228,7 +252,7 @@ namespace CliniCare.Infrastructure.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.HasIndex("ServiceId");
+                    b.HasIndex("ProcedureId");
 
                     b.HasIndex("VeterinarianId");
 
@@ -293,30 +317,6 @@ namespace CliniCare.Infrastructure.Migrations
                     b.HasIndex("VeterinarianId");
 
                     b.ToTable("VeterinaryCares");
-                });
-
-            modelBuilder.Entity("CliniCare.Domain.Models.VeterinaryProcedure", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("double");
-
-                    b.Property<string>("ServiceName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("VeterinaryProcedures");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -458,9 +458,9 @@ namespace CliniCare.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("CliniCare.Domain.Models.VeterinaryProcedure", "Service")
+                    b.HasOne("CliniCare.Domain.Models.Procedure", "Procedure")
                         .WithMany()
-                        .HasForeignKey("ServiceId")
+                        .HasForeignKey("ProcedureId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -474,7 +474,7 @@ namespace CliniCare.Infrastructure.Migrations
 
                     b.Navigation("Client");
 
-                    b.Navigation("Service");
+                    b.Navigation("Procedure");
 
                     b.Navigation("Veterinarian");
                 });

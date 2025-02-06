@@ -17,3 +17,4 @@ C:\Users\faire\source\repos\CliniCare.API\CliniCare.Infrastructure\obj\Debug\net
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Infrastructure\obj\Debug\net8.0\CliniCare.Infrastructure.pdb
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Infrastructure\obj\Debug\net8.0\CliniCare.Infrastructure.genruntimeconfig.cache
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Infrastructure\obj\Debug\net8.0\ref\CliniCare.Infrastructure.dll
+C:\Users\faire\source\repos\CliniCare.API\CliniCare.Infrastructure\obj\Debug\net8.0\CliniCare.Infrastructure.sourcelink.json

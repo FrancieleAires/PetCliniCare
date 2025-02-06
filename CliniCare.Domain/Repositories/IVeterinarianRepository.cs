@@ -10,11 +10,13 @@ namespace CliniCare.Domain.Repositories
     public interface IVeterinarianRepository
     {
         Task AddVeterinarianAsync(Veterinarian veterinarian);
-        Task UpdateVeterinarianAsync(Veterinarian veterinarian);
+        void UpdateVeterinarian(Veterinarian veterinarian);
         Task<IEnumerable<Veterinarian>> GetAllVeterinarianAsync();
+        Task<Veterinarian> GetCurrentVeterinarianAsync(int userId);
         Task<Veterinarian> GetVeterinarianByIdAsync(int id);
         Task DeleteVeterinarianAsync(Veterinarian veterinarian);
         Task<bool> ExistsAsync(int id);
+
 
     }
 }

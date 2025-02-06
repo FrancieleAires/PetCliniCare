@@ -13,3 +13,4 @@ C:\Users\faire\source\repos\CliniCare.API\CliniCare.Application\obj\Debug\net8.0
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Application\obj\Debug\net8.0\refint\CliniCare.Application.dll
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Application\obj\Debug\net8.0\CliniCare.Application.pdb
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Application\obj\Debug\net8.0\ref\CliniCare.Application.dll
+C:\Users\faire\source\repos\CliniCare.API\CliniCare.Application\obj\Debug\net8.0\CliniCare.Application.sourcelink.json

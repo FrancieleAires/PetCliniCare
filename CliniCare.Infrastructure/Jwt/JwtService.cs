@@ -1,5 +1,6 @@
 ﻿using CliniCare.Application.Abstractions;
 using CliniCare.Domain.Models;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,9 @@ namespace CliniCare.Infrastructure.Jwt
     {
         private readonly JwtSettings _jwtSettings;
 
-        public JwtService(JwtSettings jwtSettings)
+        public JwtService(IOptions<JwtSettings> jwtSettings)
         {
-            _jwtSettings = jwtSettings;
+            _jwtSettings = jwtSettings.Value;
         }
         public async Task<string> GerarJwt(ApplicationUser user, IList<string> roles)
         {

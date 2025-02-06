@@ -21,8 +21,7 @@ namespace CliniCare.Infrastructure.Repository
 
         public async Task AddClientAsync(Client client)
         {
-            await _dbContext.Clients.AddAsync(client);
-            await _dbContext.SaveChangesAsync();
+             await _dbContext.Clients.AddAsync(client);
         }
 
         public async Task DeleteClientAsync(Client client)
@@ -40,14 +39,15 @@ namespace CliniCare.Infrastructure.Repository
 
         public async Task<Client> GetClientByIdAsync(int id)
         {
-            return await _dbContext.Clients.FirstOrDefaultAsync(c => c.Id == id);
+            return await _dbContext.Clients
+            .Include(c => c.ApplicationUser)
+            .FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public async Task<Client> UpdateClientAsync(Client client)
+        public void UpdateClient(Client client)
         {
               _dbContext.Clients.Update(client);
-              await _dbContext.SaveChangesAsync();
-            return client;
+              
         }
         public async Task<bool> ExistsAsync(int id)
         {

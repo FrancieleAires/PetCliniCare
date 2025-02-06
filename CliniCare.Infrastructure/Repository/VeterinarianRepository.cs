@@ -22,18 +22,19 @@ namespace CliniCare.Infrastructure.Repository
         public async Task AddVeterinarianAsync(Veterinarian veterinarian)
         {
             await _dbContext.Veterinarians.AddAsync(veterinarian);
-            await _dbContext.SaveChangesAsync();
         }
 
         public async Task DeleteVeterinarianAsync(Veterinarian veterinarian)
         {
              _dbContext.Veterinarians.Remove(veterinarian);
-            await _dbContext.SaveChangesAsync();
+            
         }
 
         public async Task<IEnumerable<Veterinarian>> GetAllVeterinarianAsync()
         {
-            return await _dbContext.Veterinarians.ToListAsync();
+            return await _dbContext.Veterinarians
+                .Include(c => c.ApplicationUser)
+                .ToListAsync();
         }
 
         public async Task<Veterinarian> GetVeterinarianByIdAsync(int id)
@@ -41,15 +42,21 @@ namespace CliniCare.Infrastructure.Repository
             return await _dbContext.Veterinarians.FirstOrDefaultAsync(v => v.Id == id);
         }
 
-        public async Task UpdateVeterinarianAsync(Veterinarian veterinarian)
+        public void UpdateVeterinarian(Veterinarian veterinarian)
         {
             
              _dbContext.Veterinarians.Update(veterinarian);
-            await _dbContext.SaveChangesAsync();
         }
         public async Task<bool> ExistsAsync(int id)
         {
             return await _dbContext.Veterinarians.AnyAsync(c => c.Id == id);
+        }
+
+        public async Task<Veterinarian> GetCurrentVeterinarianAsync(int userId)
+        {
+            return await _dbContext.Veterinarians
+                .Include(c => c.ApplicationUser)
+                .FirstOrDefaultAsync(c => c.ApplicationUserId == userId);
         }
     }
 }
