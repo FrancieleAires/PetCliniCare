@@ -14,8 +14,8 @@ namespace CliniCare.Domain.Repositories
         Task<IEnumerable<Veterinarian>> GetAllVeterinarianAsync();
         Task<Veterinarian> GetCurrentVeterinarianAsync(int userId);
         Task<Veterinarian> GetVeterinarianByIdAsync(int id);
-        Task DeleteVeterinarianAsync(Veterinarian veterinarian);
         Task<bool> ExistsAsync(int id);
+        Task<Veterinarian> DeleteVeterinarianAsync(int id);
 
 
     }

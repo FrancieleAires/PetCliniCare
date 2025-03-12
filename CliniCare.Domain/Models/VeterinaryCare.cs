@@ -12,6 +12,8 @@ namespace CliniCare.Domain.Models
         public DateTime CareDate { get; set; }
         public string ProblemDescription { get; set; }
         public string Treatment { get; set; }
+        public int SchedulingId { get; set; }
+        public Scheduling Scheduling { get; set; }
         public int AnimalId { get; set; }
         public Animal Animal { get; set; }
         public int VeterinarianId { get; set; }

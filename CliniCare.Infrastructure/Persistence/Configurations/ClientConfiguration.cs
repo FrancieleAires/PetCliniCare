@@ -21,6 +21,11 @@ namespace CliniCare.Infrastructure.Persistence.Configurations
                 .WithOne()
                 .HasForeignKey<Client>(c => c.ApplicationUserId)
                 .IsRequired();
+
+            builder
+                .HasMany(c => c.Animals)
+                .WithOne(a => a.Client)
+                .HasForeignKey(a => a.ClientId);
         }
     }
 }

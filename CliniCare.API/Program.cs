@@ -1,4 +1,5 @@
 using CliniCare.Application.Abstractions;
+using CliniCare.Application.Commands.Animals;
 using CliniCare.Application.Services.Implementations;
 using CliniCare.Application.Services.Interfaces;
 using CliniCare.Application.Validators;
@@ -17,6 +18,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -56,6 +58,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Services.AddValidatorsFromAssemblyContaining<ClientValidator>();
+builder.Services.AddMediatR(options => options.RegisterServicesFromAssembly(typeof(InsertAnimalCommand).Assembly));
+
 
 
 builder.Services.AddDbContext<ApiDbContext>();

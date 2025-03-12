@@ -6,6 +6,7 @@ using CliniCare.Application.ViewModels;
 using CliniCare.Domain.Interfaces;
 using CliniCare.Domain.Models;
 using CliniCare.Domain.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -41,12 +42,12 @@ namespace CliniCare.Application.Services.Implementations
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<Result> CreateClientAsync(CreateClientInputModel createClientInputModel)
+        public async Task<Result<Unit>> CreateClientAsync(CreateClientInputModel createClientInputModel)
         {
             var existingUser = await _userManager.FindByEmailAsync(createClientInputModel.Email);
             if (existingUser != null)
             {
-                return Result.Failure("E-mail já está em uso!");
+                return Result<Unit>.Failure("E-mail já está em uso!");
             }
 
             var user = new ApplicationUser
@@ -60,7 +61,7 @@ namespace CliniCare.Application.Services.Implementations
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                return Result.Failure(errors);
+                return Result<Unit>.Failure(errors);
             }
             await _userManager.AddToRoleAsync(user, "Client");
 
@@ -78,46 +79,49 @@ namespace CliniCare.Application.Services.Implementations
                 var success = await _unitOfWork.CommitAsync();
                 if (!success)
                 {
-                    return Result.Failure("Erro ao salvar os dados.");
+                    return Result<Unit>.Failure("Erro ao salvar os dados.");
                 }
 
-                return Result.Success("Cliente registrado com sucesso!");
+                return Result<Unit>.Success(Unit.Value);
             }
             catch (Exception ex)
             {
-                return Result.Failure($"Erro: {ex.Message}");
+                return Result<Unit>.Failure($"Erro: {ex.Message}");
             }
         }
 
-        public async Task<IEnumerable<ClientViewModel>> GetAllClientsAsync()
+        public async Task<Result<IEnumerable<ClientViewModel>>> GetAllClientsAsync()
         {
 
             var user = await _clientRepository.GetAllClientAsync();
             if (!user.Any())
             {
-                return Enumerable.Empty<ClientViewModel>();
+                return Result<IEnumerable<ClientViewModel>>.Failure("Nenhum cliente para consultar");
             }
 
-            return user.Select(c => new ClientViewModel
+            var clients = user.Select(c => new ClientViewModel
             {
                 Id = c.Id,
                 CPF = c.CPF,
+                Name = c.Name,
                 Address = c.Address,
                 Email = c.ApplicationUser.Email,
                 Phone = c.ApplicationUser.PhoneNumber,
             });
 
+            return Result<IEnumerable<ClientViewModel>>.Success(clients);
+
         }
 
-        public async Task<ClientViewModel> GetClientByIdAsync(int id)
+        public async Task<Result<ClientViewModel>> GetClientByIdAsync(int id)
         {
             var user = await _clientRepository.GetClientByIdAsync(id);
             if (user == null)
             {
-                return null;
+                return Result<ClientViewModel>.Failure("Nenhum cliente encontrado com esse ID");
             }
 
-            return new ClientViewModel
+            var client = new ClientViewModel
             {
                 Id = id,
                 Address = user.Address,
@@ -125,26 +129,29 @@ namespace CliniCare.Application.Services.Implementations
                 Phone = user.ApplicationUser.PhoneNumber,
                 CPF = user.CPF,
             };
+
+            return Result<ClientViewModel>.Success(client);
         }
 
-        public async Task<ClientViewModel> GetProfileClientAsync()
+        public async Task<Result<ClientViewModel>> GetProfileClientAsync()
         {
             var userIdString = _httpContextAccessor.HttpContext?.User?.Claims.FirstOrDefault
                 (c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"))?.Value;
 
             if (string.IsNullOrEmpty(userIdString))
             {
-                return null; 
+                return Result<ClientViewModel>.Failure("Não foi possível consultar seu perfil"); 
             }
             if (int.TryParse(userIdString, out var userId))
             {
                 var userLogado = await _clientRepository.GetCurrentClientAsync(userId);
                 if (userLogado == null)
                 {
-                    return null;
+                    return Result<ClientViewModel>.Failure("Usuário não encontrado.");
+
                 }
 
-                var clientViewModel = new ClientViewModel
+                var client = new ClientViewModel
                 {
                     Id = userId,
                     Name = userLogado.Name,
@@ -154,52 +161,52 @@ namespace CliniCare.Application.Services.Implementations
                     Address = userLogado.Address
                 };
 
-                return clientViewModel;
+                return Result<ClientViewModel>.Success(client);
             }
             else
             {
-                return null;
+                return Result<ClientViewModel>.Failure("Usuário não encontrado.");
             }
 
         }
 
-        public async Task<Result> LoginClientAsync(LoginClientInputModel loginClientInputModel)
+        public async Task<Result<string>> LoginClientAsync(LoginClientInputModel loginClientInputModel)
         {
             var user = await _userManager.FindByEmailAsync(loginClientInputModel.Email);
             if (user == null)
             {
-                return Result.Failure("E-mail para login inválido!");
+                return Result<string>.Failure("E-mail para login inválido!");
             }
             var result = await _signInManager.PasswordSignInAsync(user, loginClientInputModel.Password, false, false);
             if (!result.Succeeded)
             {
-                return Result.Failure("Tentativa de login inválida.");
+                return Result<string>.Failure("Tentativa de login inválida.");
             }
             var role = await _userManager.GetRolesAsync(user);
             var token = await _jwtService.GerarJwt(user, role);
 
-            return Result.Success(token);
+            return Result<string>.Success(token);
         }
 
-        public async Task<Result> UpdateClientAsync(UpdateClientInputModel updateClientInputModel)
+        public async Task<Result<Unit>> UpdateClientAsync(UpdateClientInputModel updateClientInputModel)
         {
             var userIdString = _httpContextAccessor.HttpContext?.User?.Claims
          .FirstOrDefault(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"))?.Value;
 
             if (string.IsNullOrEmpty(userIdString))
             {
-                return Result.Failure("Usuário não autenticado!");
+                return Result<Unit>.Failure("Usuário não autenticado!");
             }
 
             if (!int.TryParse(userIdString, out var userId))
             {
-                return Result.Failure("ID do usuário inválido!");
+                return Result<Unit>.Failure("ID do usuário inválido!");
             }
 
             var userLogado = await _clientRepository.GetCurrentClientAsync(userId);
             if (userLogado == null)
             {
-                return Result.Failure("Cliente não encontrado!");
+                return Result<Unit>.Failure("Cliente não encontrado!");
             }
 
            
@@ -212,19 +219,19 @@ namespace CliniCare.Application.Services.Implementations
 
             if (!updatedClient)
             {
-                return Result.Failure("Não foi possível realizar modificações.");
+                return Result<Unit>.Failure("Não foi possível realizar modificações.");
             }
 
-            return Result.Success("Cliente atualizado com sucesso!");
+            return Result<Unit>.Success(Unit.Value);
 
         }
 
-        public async Task<Result> UpdateClientByAdminAsync(int clientId, UpdateClientInputModel updateClientInputModel)
+        public async Task<Result<Unit>> UpdateClientByAdminAsync(int clientId, UpdateClientInputModel updateClientInputModel)
         {
             var user =  await _clientRepository.GetClientByIdAsync(clientId);
             if (user == null)
             {
-                return Result.Failure("Não foi encontrado nenhum cliente com esse id.");
+                return Result<Unit>.Failure("Não foi encontrado nenhum cliente com esse id.");
             }
 
             user.Address = updateClientInputModel.Address;
@@ -235,10 +242,10 @@ namespace CliniCare.Application.Services.Implementations
 
             if (!updatedClient)
             {
-                return Result.Failure("Falha ao atualizar cliente!");
+                return Result<Unit>.Failure("Falha ao atualizar cliente!");
             }
 
-            return Result.Success("Cliente atualizado com sucesso!.");
+            return Result<Unit>.Success(Unit.Value);
         }
     }
 }

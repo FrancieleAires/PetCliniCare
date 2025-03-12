@@ -1,4 +1,4 @@
-﻿using CliniCare.Application.InputModels.Animal;
+﻿using CliniCare.Application.Commands.Animals;
 using CliniCare.Domain.Models;
 using FluentValidation;
 using System;
@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace CliniCare.Application.Validators
 {
-    public class AnimalValidator : AbstractValidator<CreateAnimalInputModel>
+    public class AnimalValidator : AbstractValidator<InsertAnimalCommand>
     {
-        public AnimalValidator() 
+        public AnimalValidator()
         {
             RuleFor(a => a.Species)
            .NotEmpty()
@@ -40,8 +40,19 @@ namespace CliniCare.Application.Validators
             RuleFor(a => a.DateOfBirth)
                 .NotEmpty()
                 .WithMessage("Data de nascimento é obrigatória.")
-                .LessThan(DateTime.Now)
-                .WithMessage("Data de nascimento deve ser no passado.");
+                .LessThanOrEqualTo(DateTime.Today)
+                .WithMessage("Data de nascimento deve ser até hoje.");
+            
+
         }
+
+            private bool BeAValidUserId(string userId)
+            {
+                if (string.IsNullOrEmpty(userId))
+                    return false;
+
+                return int.TryParse(userId, out int result) && result > 0;
+            }
+        
     }
 }

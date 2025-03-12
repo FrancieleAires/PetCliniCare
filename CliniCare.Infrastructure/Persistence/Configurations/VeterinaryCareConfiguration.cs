@@ -20,6 +20,11 @@ namespace CliniCare.Infrastructure.Persistence.Configurations
                 .HasForeignKey(vc => vc.AnimalId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
+            builder.HasOne(vc => vc.Scheduling)
+                .WithMany()
+                .HasForeignKey(vc => vc.SchedulingId)
+                .OnDelete(DeleteBehavior.Restrict)
+                .IsRequired();
 
             builder.HasOne(vc => vc.Veterinarian)
                 .WithMany()

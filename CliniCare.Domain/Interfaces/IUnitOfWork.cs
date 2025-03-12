@@ -11,6 +11,7 @@ namespace CliniCare.Domain.Interfaces
     {
         IClientRepository Clients { get; }
         IVeterinarianRepository Veterinarians { get; }
+        IAnimalRepository Animals { get; }
 
         Task<bool> CommitAsync();
     }

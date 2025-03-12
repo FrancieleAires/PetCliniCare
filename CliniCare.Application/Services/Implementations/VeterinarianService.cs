@@ -6,6 +6,7 @@ using CliniCare.Application.ViewModels;
 using CliniCare.Domain.Interfaces;
 using CliniCare.Domain.Models;
 using CliniCare.Domain.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -41,12 +42,12 @@ namespace CliniCare.Application.Services.Implementations
 
         }
 
-        public async Task<Result> CreateVeterinarianAsync(CreateVeterinarianInputModel createVeterinarianInputModel)
+        public async Task<Result<Unit>> CreateVeterinarianAsync(CreateVeterinarianInputModel createVeterinarianInputModel)
         {
             var userExisting = await _userManager.FindByEmailAsync(createVeterinarianInputModel.Email);
             if (userExisting != null)
             {
-                return Result.Failure("E-mail já está em uso!");
+                return Result<Unit>.Failure("E-mail já está em uso!");
             }
 
             var user = new ApplicationUser
@@ -59,7 +60,7 @@ namespace CliniCare.Application.Services.Implementations
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                return Result.Failure(errors);
+                return Result<Unit>.Failure(errors);
             }
             await _userManager.AddToRoleAsync(user, "Admin");
 
@@ -78,26 +79,61 @@ namespace CliniCare.Application.Services.Implementations
 
                 if (!success)
                 {
-                    return Result.Failure("Erro ao salvar os dados.");
+                    return Result<Unit>.Failure("Erro ao salvar os dados.");
                 }
 
-                return Result.Success("Cliente registrado com sucesso!");
+                return Result<Unit>.Success(Unit.Value);
             }
             catch (Exception ex)
             {
-                return Result.Failure($"Erro: {ex.Message}");
+                return Result<Unit>.Failure($"Erro: {ex.Message}");
             }
         }
 
-        public async Task<IEnumerable<VeterinarianViewModel>> GetAllClientsAsync()
+        public async Task<Result<Unit>> DeleteVeterinarianAsync(int id)
         {
-            var user = await _veterinarianRepository.GetAllVeterinarianAsync();
-            if (!user.Any())
+            var veterinarian = await _veterinarianRepository.GetVeterinarianByIdAsync(id);
+            if (veterinarian == null)
             {
-                return Enumerable.Empty<VeterinarianViewModel>();
+                return Result<Unit>.Failure("Não foi possível encontrar um veterinário com esse ID.");
             }
 
-            return user.Select(c => new VeterinarianViewModel
+            
+            var deleteResult = await _veterinarianRepository.DeleteVeterinarianAsync(id);
+
+            if (deleteResult != null)
+            {
+                if (veterinarian.ApplicationUser != null)
+                {
+                    var userDeleteResult = await _userManager.DeleteAsync(veterinarian.ApplicationUser);
+                    if (userDeleteResult.Succeeded)
+                    {
+                        return Result<Unit>.Success(Unit.Value);
+                    }
+                    else
+                    {
+                        return Result<Unit>.Failure("Veterinário deletado, mas não foi possível excluir o usuário.");
+                    }
+                }
+
+                return Result<Unit>.Success(Unit.Value);
+            }
+            else
+            {
+                return Result<Unit>.Failure("Não foi possível excluir o veterinário");
+            }
+        }
+
+        public async Task<Result<IEnumerable<VeterinarianViewModel>>> GetAllVeterinariansAsync()
+        {
+            var users = await _veterinarianRepository.GetAllVeterinarianAsync();
+
+            if (!users.Any())
+            {
+                return Result<IEnumerable<VeterinarianViewModel>>.Failure("Nenhum veterinário encontrado.");
+            }
+
+            var veterinarians = users.Select(c => new VeterinarianViewModel
             {
                 Id = c.Id,
                 Specialty = c.Specialty,
@@ -105,101 +141,56 @@ namespace CliniCare.Application.Services.Implementations
                 Name = c.Name,
                 Email = c.ApplicationUser.Email,
             });
+
+            return Result<IEnumerable<VeterinarianViewModel>>.Success(veterinarians);
         }
 
-        public async Task<VeterinarianViewModel> GetClientByIdAsync(int id)
+        public async Task<Result<VeterinarianViewModel>> GetVeterinarianByIdAsync(int id)
         {
             var user = await _veterinarianRepository.GetVeterinarianByIdAsync(id);
             if (user == null)
             {
-                return null;
+                return Result<VeterinarianViewModel>.Failure("Não foi possível consultar o veterinário pelo ID fornecido.");
             }
 
-            return new VeterinarianViewModel
+            var veterinarianViewModel = new VeterinarianViewModel
             {
                 Id = id,
-                CRMV = user.CRMV,
-                Name = user.Name,
-                Specialty = user.Specialty,
-                Email = user.ApplicationUser.Email,
-            };
-        }
-
-        public async Task<VeterinarianViewModel> GetProfileVeterinarianAsync()
-        {
-            var userIdString = _contextAccessor.HttpContext?.User?.Claims.FirstOrDefault
-                (c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"))?.Value;
-
-            if (string.IsNullOrEmpty(userIdString))
-            {
-                return null;
-            }
-            if (int.TryParse(userIdString, out var userId))
-            {
-                var userLogado = await _veterinarianRepository.GetCurrentVeterinarianAsync(userId);
-                if (userLogado == null)
-                {
-                    return null;
-                }
-
-                var veterinarianViewModel = new VeterinarianViewModel
-                {
-                    Name = userLogado.Name,
-                    Specialty = userLogado.Specialty,
-                    Email = userLogado.ApplicationUser.Email,
-                };
-
-                return veterinarianViewModel;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        public async Task<VeterinarianViewModel> GetVeterinariantByIdAsync(int id)
-        {
-            var user = await _veterinarianRepository.GetVeterinarianByIdAsync(id);
-            if (user == null)
-            {
-                return null;
-            }
-
-            return new VeterinarianViewModel
-            {
                 Name = user.Name,
                 Specialty = user.Specialty,
                 CRMV = user.CRMV,
                 Email = user.ApplicationUser.Email,
             };
+
+            return Result<VeterinarianViewModel>.Success(veterinarianViewModel);
         }
 
-        public async Task<Result> LoginVeterinarianAsync(LoginVeterinarianInputModel loginVeterinarianInputModel)
+        public async Task<Result<string>> LoginVeterinarianAsync(LoginVeterinarianInputModel loginVeterinarianInputModel)
         {
             var user = await _userManager.FindByEmailAsync(loginVeterinarianInputModel.Email);
             if(user == null)
             {
-                return Result.Failure("E-mail inválido para login.");
+                return Result<string>.Failure("E-mail inválido para login.");
             }
 
             var result = await _signInManager.PasswordSignInAsync(user, loginVeterinarianInputModel.Password, false, false);
             if (!result.Succeeded)
             {
-                return Result.Failure("Tentativa de login inválida.");
+                return Result<string>.Failure("Tentativa de login inválida.");
             }
             var roles = await _userManager.GetRolesAsync(user);
             var token = await _jwtService.GerarJwt(user, roles);
 
-            return Result.Success(token);
+            return Result<string>.Success(token);
         }
 
-        public async Task<Result> UpdateVeterinarianAsync(int veterinarianId, UpdateVeterinarianInputModel updateVeterinarianInputModel)
+        public async Task<Result<Unit>> UpdateVeterinarianAsync(int veterinarianId, UpdateVeterinarianInputModel updateVeterinarianInputModel)
         {
             var user = await _veterinarianRepository.GetVeterinarianByIdAsync(veterinarianId);
 
             if(user == null)
             {
-                return Result.Failure("Não foi encontrado nenhum cliente com esse id.");
+                return Result<Unit>.Failure("Não foi encontrado nenhum cliente com esse id.");
             }
 
             user.Name = updateVeterinarianInputModel.Name;
@@ -208,10 +199,10 @@ namespace CliniCare.Application.Services.Implementations
             var success = await _unitOfWork.CommitAsync();
             if (!success)
             {
-                return Result.Failure("Falha ao atualizar cliente!");
+                return Result<Unit>.Failure("Falha ao atualizar cliente!");
             }
 
-            return Result.Success("Cliente atualizado com sucesso!.");
+            return Result<Unit>.Success(Unit.Value);
         }
     }
 }

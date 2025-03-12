@@ -133,3 +133,5 @@ C:\Users\faire\source\repos\CliniCare.API\CliniCare.API\bin\Debug\net8.0\FluentV
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.API\obj\Debug\net8.0\CliniCare.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.API\obj\Debug\net8.0\CliniCare.API.sourcelink.json
+C:\Users\faire\source\repos\CliniCare.API\CliniCare.API\bin\Debug\net8.0\MediatR.dll
+C:\Users\faire\source\repos\CliniCare.API\CliniCare.API\bin\Debug\net8.0\MediatR.Contracts.dll

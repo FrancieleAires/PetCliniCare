@@ -19,7 +19,8 @@ namespace CliniCare.Infrastructure.Persistence.Configurations
                 .HasOne(c => c.ApplicationUser)
                 .WithOne()
                 .HasForeignKey<Veterinarian>(c => c.ApplicationUserId)
-                .IsRequired(); ;
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

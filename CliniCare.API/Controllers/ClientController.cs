@@ -8,7 +8,7 @@ namespace CliniCare.API.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("clients")]
+    [Route("api/clients")]
     public class ClientController : ControllerBase
     {
         private readonly IClientService _clientService;

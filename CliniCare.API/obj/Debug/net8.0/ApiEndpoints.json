@@ -1,5 +1,136 @@
 [
   {
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "GetVeterinarianByIdAsync",
+    "RelativePath": "{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "DeleteVeterinarianAsync",
+    "RelativePath": "{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "GetAllVeterinariansAsync",
+    "RelativePath": "all-veterinarians",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.AnimalController",
+    "Method": "CreateAnimalByClientAsync",
+    "RelativePath": "api/animals/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Animals.InsertAnimalCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ClientController",
+    "Method": "GetClientByIdAsync",
+    "RelativePath": "api/clients/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ClientController",
+    "Method": "GetAllClientsAsync",
+    "RelativePath": "api/clients/all-clients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ClientController",
+    "Method": "GetProfileClient",
+    "RelativePath": "api/clients/profile-client",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ClientController",
+    "Method": "UpdateClientByAdminAsync",
+    "RelativePath": "api/clients/update-by-admin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateClientInputModel",
+        "Type": "CliniCare.Application.InputModels.Client.UpdateClientInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ClientController",
+    "Method": "UpdateClientAsync",
+    "RelativePath": "api/clients/update-client",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateClientInputModel",
+        "Type": "CliniCare.Application.InputModels.Client.UpdateClientInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CliniCare.API.Controllers.AuthController",
     "Method": "LoginClientAsync",
     "RelativePath": "api/users/login-client",
@@ -64,73 +195,21 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CliniCare.API.Controllers.ClientController",
-    "Method": "GetClientByIdAsync",
-    "RelativePath": "clients/{id}",
-    "HttpMethod": "GET",
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "UpdateVeterinarianAsync",
+    "RelativePath": "update-veterinarian",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.ClientController",
-    "Method": "GetAllClientsAsync",
-    "RelativePath": "clients/all-clients",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.ClientController",
-    "Method": "GetProfileClient",
-    "RelativePath": "clients/profile-client",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.ClientController",
-    "Method": "UpdateClientByAdminAsync",
-    "RelativePath": "clients/update-by-admin",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "clientId",
-        "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "updateClientInputModel",
-        "Type": "CliniCare.Application.InputModels.Client.UpdateClientInputModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.ClientController",
-    "Method": "UpdateClientAsync",
-    "RelativePath": "clients/update-client",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "updateClientInputModel",
-        "Type": "CliniCare.Application.InputModels.Client.UpdateClientInputModel",
+        "Name": "updateVeterinarianInputModel",
+        "Type": "CliniCare.Application.InputModels.Veterinarian.UpdateVeterinarianInputModel",
         "IsRequired": true
       }
     ],

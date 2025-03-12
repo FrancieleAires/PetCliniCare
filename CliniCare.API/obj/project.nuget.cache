@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kxULtLgi7Pk=",
+  "dgSpecHash": "AC8s+7Ilp0U=",
   "success": true,
   "projectFilePath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\faire\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\faire\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\faire\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\faire\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\faire\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\faire\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.11\\microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",
     "C:\\Users\\faire\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.1\\microsoft.aspnetcore.cryptography.internal.9.0.1.nupkg.sha512",
     "C:\\Users\\faire\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.1\\microsoft.aspnetcore.cryptography.keyderivation.9.0.1.nupkg.sha512",

@@ -13,6 +13,7 @@ namespace CliniCare.Domain.Repositories
         void UpdateClient(Client client);
         Task<IEnumerable<Client>> GetAllClientAsync();
         Task<Client> GetCurrentClientAsync(int userId);
+        Task<Client> GetClientByUserIdAsync(int userId);
         Task<Client> GetClientByIdAsync (int id);
         Task DeleteClientAsync(Client client);
         Task<bool> ExistsAsync(int id);

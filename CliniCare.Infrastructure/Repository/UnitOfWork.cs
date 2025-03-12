@@ -8,14 +8,17 @@ public class UnitOfWork : IUnitOfWork
 
     public IClientRepository Clients { get; }
     public IVeterinarianRepository Veterinarians { get; }
+    public IAnimalRepository Animals { get; }
 
     public UnitOfWork(ApiDbContext context,
                       IClientRepository clientRepository,
-                      IVeterinarianRepository veterinarianRepository)
+                      IVeterinarianRepository veterinarianRepository,
+                      IAnimalRepository animalRepository)
     {
         _context = context;
         Clients = clientRepository;
         Veterinarians = veterinarianRepository;
+        Animals = animalRepository;
     }
 
     public async Task<bool> CommitAsync()

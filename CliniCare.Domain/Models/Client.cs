@@ -14,5 +14,6 @@ namespace CliniCare.Domain.Models
         public string Address { get; set; }
         public int ApplicationUserId  { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
+        public List<Animal> Animals { get; set; }
     }
 }

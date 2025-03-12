@@ -22,14 +22,13 @@ namespace CliniCare.Infrastructure.Repository
         public async Task AddAnimalAsync(Animal animal)
         {
             await _dbContext.Animals.AddAsync(animal);
-            await _dbContext.SaveChangesAsync();
 
         }
 
         public async Task DeleteAnimalAsync(Animal animal)
         {
             _dbContext.Animals.Remove(animal);
-            await _dbContext.SaveChangesAsync();
+            
         }
 
         public async Task<IEnumerable<Animal>> GetAllAnimalAsync()
@@ -45,7 +44,7 @@ namespace CliniCare.Infrastructure.Repository
         public async Task UpdateAnimalAsync(Animal animal)
         {
             _dbContext.Animals.Update(animal);
-            await _dbContext.SaveChangesAsync();
+            
         }
         public async Task<bool> ExistsAsync(int id)
         {

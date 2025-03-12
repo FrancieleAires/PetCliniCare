@@ -43,6 +43,12 @@ namespace CliniCare.Infrastructure.Repository
             .Include(c => c.ApplicationUser)
             .FirstOrDefaultAsync(c => c.Id == id);
         }
+        public async Task<Client> GetClientByUserIdAsync(int userId)
+        {
+            return await _dbContext.Clients
+                .Include(c => c.ApplicationUser) 
+                .FirstOrDefaultAsync(c => c.ApplicationUserId == userId);
+        }
 
         public void UpdateClient(Client client)
         {

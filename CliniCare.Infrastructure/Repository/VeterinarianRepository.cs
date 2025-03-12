@@ -24,12 +24,6 @@ namespace CliniCare.Infrastructure.Repository
             await _dbContext.Veterinarians.AddAsync(veterinarian);
         }
 
-        public async Task DeleteVeterinarianAsync(Veterinarian veterinarian)
-        {
-             _dbContext.Veterinarians.Remove(veterinarian);
-            
-        }
-
         public async Task<IEnumerable<Veterinarian>> GetAllVeterinarianAsync()
         {
             return await _dbContext.Veterinarians
@@ -39,7 +33,18 @@ namespace CliniCare.Infrastructure.Repository
 
         public async Task<Veterinarian> GetVeterinarianByIdAsync(int id)
         {
-            return await _dbContext.Veterinarians.FirstOrDefaultAsync(v => v.Id == id);
+            return await _dbContext.Veterinarians
+            .Include(v => v.ApplicationUser)
+            .FirstOrDefaultAsync(v => v.Id == id);
+        }
+
+        public async Task<Veterinarian> DeleteVeterinarianAsync(int id)
+        {
+            var veterinarian = await _dbContext.Veterinarians
+            .Include(v => v.ApplicationUser)
+            .FirstOrDefaultAsync(v => v.Id == id);
+            _dbContext.Veterinarians.Remove(veterinarian);
+            return veterinarian;
         }
 
         public void UpdateVeterinarian(Veterinarian veterinarian)
