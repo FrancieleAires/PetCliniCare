@@ -25,22 +25,35 @@ namespace CliniCare.Infrastructure.Repository
 
         }
 
-        public async Task DeleteAnimalAsync(Animal animal)
+        public async Task<Animal> DeleteAnimalAsync(int id)
         {
-            _dbContext.Animals.Remove(animal);
-            
+             var animals = await _dbContext.Animals
+            .Include(a => a.Client)
+            .FirstOrDefaultAsync(a => a.Id == id);
+            _dbContext.Animals.Remove(animals);
+            return animals;
+
         }
 
-        public async Task<IEnumerable<Animal>> GetAllAnimalAsync()
+        public async Task<IEnumerable<Animal>> GetAllAnimalAsync(int clientId)
         {
-            return await _dbContext.Animals.ToListAsync();
+            return await _dbContext.Animals
+                .Where(a => a.ClientId == clientId)
+                .ToListAsync();
+        }
+
+        public async Task<Animal> GetAnimalByClientIdAsync(int id)
+        {
+            return await _dbContext.Animals
+                .Include(c => c.Client)
+                .FirstOrDefaultAsync(a => a.Id == id);
         }
 
         public async Task<Animal> GetAnimalByIdAsync(int id)
         {
             return await _dbContext.Animals.FirstOrDefaultAsync(a => a.Id == id);
+                
         }
-
         public async Task UpdateAnimalAsync(Animal animal)
         {
             _dbContext.Animals.Update(animal);

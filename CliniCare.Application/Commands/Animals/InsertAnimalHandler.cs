@@ -1,4 +1,5 @@
 ﻿using CliniCare.Application.Helpers;
+using CliniCare.Application.Services.Interfaces;
 using CliniCare.Domain.Interfaces;
 using CliniCare.Domain.Repositories;
 using MediatR;
@@ -14,30 +15,21 @@ namespace CliniCare.Application.Commands.Animals
     public class InsertAnimalHandler : IRequestHandler<InsertAnimalCommand, Result<Unit>>
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IApplicationUser _user;
 
-        public InsertAnimalHandler(IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor)
+        public InsertAnimalHandler(IUnitOfWork unitOfWork, IApplicationUser user)
         {
             _unitOfWork = unitOfWork;
-            _httpContextAccessor = httpContextAccessor;
+            _user = user;
         }
 
         public async Task<Result<Unit>> Handle(InsertAnimalCommand request, CancellationToken cancellationToken)
         {
-            var userId = _httpContextAccessor.HttpContext?.User?.Claims
-                .FirstOrDefault(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"))?.Value;
+            var userId = _user.Id;
 
-            if (string.IsNullOrEmpty(userId))
-            {
-                return Result<Unit>.Failure("Usuário não autenticado.");
-            }
+            
 
-            if (!int.TryParse(userId, out int clientId))
-            {
-                return Result<Unit>.Failure("ID de usuário inválido.");
-            }
-
-            var client = await _unitOfWork.Clients.GetClientByUserIdAsync(clientId);
+            var client = await _unitOfWork.Clients.GetClientByUserIdAsync(userId);
             if (client == null)
             {
                 return Result<Unit>.Failure("Cliente não encontrado.");

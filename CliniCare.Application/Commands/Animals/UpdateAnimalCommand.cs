@@ -28,18 +28,5 @@ namespace CliniCare.Application.Commands.Animals
             Gender = gender;
         }
 
-        public Animal ToEntity()
-        {
-            return new Animal
-            {
-                Id = Id,
-                Species = Species,
-                Name = Name,
-                Gender = Gender,
-                DateOfBirth = DateOfBirth,
-                Breed = Breed,
-
-            };
-        }
     }
 }

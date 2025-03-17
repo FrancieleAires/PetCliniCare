@@ -43,6 +43,54 @@
   },
   {
     "ContainingType": "CliniCare.API.Controllers.AnimalController",
+    "Method": "GetAnimalByIdAsync",
+    "RelativePath": "api/animals/{animalId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animalId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.AnimalController",
+    "Method": "DeleteAnimalAsync",
+    "RelativePath": "api/animals/{animalId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animalId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.AnimalController",
+    "Method": "GetAllAnimalsByClientIdAsync",
+    "RelativePath": "api/animals/all-animals/{clientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.AnimalController",
     "Method": "CreateAnimalByClientAsync",
     "RelativePath": "api/animals/register",
     "HttpMethod": "POST",
@@ -52,6 +100,22 @@
       {
         "Name": "command",
         "Type": "CliniCare.Application.Commands.Animals.InsertAnimalCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.AnimalController",
+    "Method": "UpdateAnimalByClientAsync",
+    "RelativePath": "api/animals/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Animals.UpdateAnimalCommand",
         "IsRequired": true
       }
     ],

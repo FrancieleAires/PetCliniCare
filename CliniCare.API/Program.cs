@@ -1,3 +1,4 @@
+using CliniCare.API;
 using CliniCare.Application.Abstractions;
 using CliniCare.Application.Commands.Animals;
 using CliniCare.Application.Services.Implementations;
@@ -76,6 +77,7 @@ builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IVeterinarianService, VeterinarianService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IApplicationUser, ApplicationUsers>();
 
 
 builder.Services.AddIdentity<ApplicationUser, Role>()
