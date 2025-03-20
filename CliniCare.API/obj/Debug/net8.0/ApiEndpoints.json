@@ -259,6 +259,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "DeleteProcedureAsync",
+    "RelativePath": "procedures/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Procedures.DeleteProcedureCommand",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "GetProcedureByIdAsync",
+    "RelativePath": "procedures/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "CreateProceduresAsync",
+    "RelativePath": "procedures/create-procedures",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Procedures.InsertProcedureCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "GetAllProceduresAsync",
+    "RelativePath": "procedures/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "UpdateProcedureAsync",
+    "RelativePath": "procedures/update-procedure",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Procedures.UpdateProcedureCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
     "Method": "UpdateVeterinarianAsync",
     "RelativePath": "update-veterinarian",

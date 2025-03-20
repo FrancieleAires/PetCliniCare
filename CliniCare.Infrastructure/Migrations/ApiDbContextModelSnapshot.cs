@@ -305,6 +305,9 @@ namespace CliniCare.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("SchedulingId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Treatment")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -315,6 +318,8 @@ namespace CliniCare.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AnimalId");
+
+                    b.HasIndex("SchedulingId");
 
                     b.HasIndex("VeterinarianId");
 
@@ -427,7 +432,7 @@ namespace CliniCare.Infrastructure.Migrations
             modelBuilder.Entity("CliniCare.Domain.Models.Animal", b =>
                 {
                     b.HasOne("CliniCare.Domain.Models.Client", "Client")
-                        .WithMany()
+                        .WithMany("Animals")
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -500,6 +505,12 @@ namespace CliniCare.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("CliniCare.Domain.Models.Scheduling", "Scheduling")
+                        .WithMany()
+                        .HasForeignKey("SchedulingId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("CliniCare.Domain.Models.Veterinarian", "Veterinarian")
                         .WithMany()
                         .HasForeignKey("VeterinarianId")
@@ -507,6 +518,8 @@ namespace CliniCare.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Animal");
+
+                    b.Navigation("Scheduling");
 
                     b.Navigation("Veterinarian");
                 });
@@ -560,6 +573,11 @@ namespace CliniCare.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("CliniCare.Domain.Models.Client", b =>
+                {
+                    b.Navigation("Animals");
                 });
 #pragma warning restore 612, 618
         }

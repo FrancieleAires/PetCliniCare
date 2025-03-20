@@ -22,24 +22,23 @@ namespace CliniCare.Application.Services.Implementations
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IVeterinarianRepository _veterinarianRepository;
-        private readonly IHttpContextAccessor _contextAccessor;
+        private readonly IApplicationUser _user;
         private readonly IJwtService _jwtService;
         private readonly IUnitOfWork _unitOfWork;
 
-        public VeterinarianService(UserManager<ApplicationUser> userManager, 
+        public VeterinarianService(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IHttpContextAccessor contextAccessor,
             IJwtService jwtService,
             IVeterinarianRepository veterinarianRepository,
-            IUnitOfWork unitOfWork)
+            IUnitOfWork unitOfWork,
+            IApplicationUser user)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _contextAccessor = contextAccessor;
-            _jwtService = jwtService; 
+            _jwtService = jwtService;
             _veterinarianRepository = veterinarianRepository;
             _unitOfWork = unitOfWork;
-
+            _user = user;
         }
 
         public async Task<Result<Unit>> CreateVeterinarianAsync(CreateVeterinarianInputModel createVeterinarianInputModel)

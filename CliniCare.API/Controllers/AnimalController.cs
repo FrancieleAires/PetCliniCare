@@ -15,12 +15,9 @@ namespace CliniCare.API.Controllers
     public class AnimalController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IHttpContextAccessor _httpContextAccessor;
-
-        public AnimalController(IMediator mediator, IHttpContextAccessor httpContextAccessor)
+        public AnimalController(IMediator mediator)
         {
             _mediator = mediator;
-            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpPost("register")]

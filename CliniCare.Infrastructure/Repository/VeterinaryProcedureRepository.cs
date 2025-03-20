@@ -22,18 +22,17 @@ namespace CliniCare.Infrastructure.Repository
         public async Task AddAsync(Procedure veterinaryProcedure)
         {
             await _dbContext.VeterinaryProcedures.AddAsync(veterinaryProcedure);
-            await _dbContext.SaveChangesAsync();
         }
 
         public async Task DeleteVeterinaryProcedureAsync(Procedure veterinaryProcedure)
         {
             _dbContext.VeterinaryProcedures.Remove(veterinaryProcedure);
-            await _dbContext.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Procedure>> GetAllVeterinaryProcedureAsync()
         {
-            return await _dbContext.VeterinaryProcedures.ToListAsync();
+            return await _dbContext.VeterinaryProcedures.
+                ToListAsync();
         }
 
         public async Task<Procedure> GetByIdAsync(int id)
@@ -44,7 +43,6 @@ namespace CliniCare.Infrastructure.Repository
         public async Task UpdateAsync(Procedure veterinaryProcedure)
         {
             _dbContext.VeterinaryProcedures.Update(veterinaryProcedure);
-            await _dbContext.SaveChangesAsync();
         }
         public async Task<bool> ExistsAsync(int id)
         {

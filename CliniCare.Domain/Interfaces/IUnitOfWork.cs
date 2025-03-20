@@ -13,6 +13,8 @@ namespace CliniCare.Domain.Interfaces
         IVeterinarianRepository Veterinarians { get; }
         IAnimalRepository Animals { get; }
 
+        IVeterinaryProcedureRepository VeterinaryProcedures { get; }
+
         Task<bool> CommitAsync();
     }
 }

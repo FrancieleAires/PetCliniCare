@@ -22,24 +22,24 @@ namespace CliniCare.Application.Services.Implementations
         private readonly IClientRepository _clientRepository;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IApplicationUser _user;
         private readonly IJwtService _jwtService;
         private readonly IUnitOfWork _unitOfWork;
 
         public ClientService(
             IClientRepository clientRepository,
-            UserManager<ApplicationUser> userManager, 
+            UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IHttpContextAccessor httpContextAccessor, 
             IJwtService jwtService,
-            IUnitOfWork unitOfWork)
+            IUnitOfWork unitOfWork,
+            IApplicationUser user)
         {
             _clientRepository = clientRepository;
             _userManager = userManager;
             _signInManager = signInManager;
-            _httpContextAccessor = httpContextAccessor;
             _jwtService = jwtService;
             _unitOfWork = unitOfWork;
+            _user = user;
         }
 
         public async Task<Result<Unit>> CreateClientAsync(CreateClientInputModel createClientInputModel)
@@ -135,38 +135,27 @@ namespace CliniCare.Application.Services.Implementations
 
         public async Task<Result<ClientViewModel>> GetProfileClientAsync()
         {
-            var userIdString = _httpContextAccessor.HttpContext?.User?.Claims.FirstOrDefault
-                (c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"))?.Value;
+            var userId = _user.Id;
 
-            if (string.IsNullOrEmpty(userIdString))
-            {
-                return Result<ClientViewModel>.Failure("Não foi possível consultar seu perfil"); 
-            }
-            if (int.TryParse(userIdString, out var userId))
-            {
-                var userLogado = await _clientRepository.GetCurrentClientAsync(userId);
-                if (userLogado == null)
-                {
-                    return Result<ClientViewModel>.Failure("Usuário não encontrado.");
-
-                }
-
-                var client = new ClientViewModel
-                {
-                    Id = userId,
-                    Name = userLogado.Name,
-                    Email = userLogado.ApplicationUser.Email,
-                    Phone = userLogado.ApplicationUser.PhoneNumber,
-                    CPF = userLogado.CPF,
-                    Address = userLogado.Address
-                };
-
-                return Result<ClientViewModel>.Success(client);
-            }
-            else
+            var userLogado = await _clientRepository.GetCurrentClientAsync(userId);
+            if (userLogado == null)
             {
                 return Result<ClientViewModel>.Failure("Usuário não encontrado.");
+
             }
+
+            var client = new ClientViewModel
+            {
+                Id = userLogado.Id,
+                Name = userLogado.Name,
+                Email = userLogado.ApplicationUser.Email,
+                Phone = userLogado.ApplicationUser.PhoneNumber,
+                CPF = userLogado.CPF,
+                Address = userLogado.Address
+            };
+
+            return Result<ClientViewModel>.Success(client);
+
 
         }
 
@@ -190,18 +179,7 @@ namespace CliniCare.Application.Services.Implementations
 
         public async Task<Result<Unit>> UpdateClientAsync(UpdateClientInputModel updateClientInputModel)
         {
-            var userIdString = _httpContextAccessor.HttpContext?.User?.Claims
-         .FirstOrDefault(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"))?.Value;
-
-            if (string.IsNullOrEmpty(userIdString))
-            {
-                return Result<Unit>.Failure("Usuário não autenticado!");
-            }
-
-            if (!int.TryParse(userIdString, out var userId))
-            {
-                return Result<Unit>.Failure("ID do usuário inválido!");
-            }
+            var userId = _user.Id;
 
             var userLogado = await _clientRepository.GetCurrentClientAsync(userId);
             if (userLogado == null)

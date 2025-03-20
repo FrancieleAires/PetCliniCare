@@ -1,8 +1,8 @@
-﻿using CliniCare.Application.InputModels.VeterinaryProcedure;
+﻿using CliniCare.Application.Commands.Procedures;
 using CliniCare.Domain.Models;
 using FluentValidation;
 
-public class VeterinaryProcedureValidator : AbstractValidator<CreateVetProcedureInputModel>
+public class VeterinaryProcedureValidator : AbstractValidator<InsertProcedureCommand>
 {
     public VeterinaryProcedureValidator()
     {

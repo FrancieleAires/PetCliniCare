@@ -11,18 +11,18 @@ using System.Threading.Tasks;
 
 namespace CliniCare.Application.Queries.Animal
 {
-    public class GetAllAnimalsByClientQueryHandler : IRequestHandler<GetAllAnimalsByClientQuery, Result<List<AnimalViewModel>>>
+    public class GetAllAnimalsByClientHandler : IRequestHandler<GetAllAnimalsByClientQuery, Result<List<AnimalViewModel>>>
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public GetAllAnimalsByClientQueryHandler(IUnitOfWork unitOfWork)
+        public GetAllAnimalsByClientHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<Result<List<AnimalViewModel>>> Handle(GetAllAnimalsByClientQuery request, CancellationToken cancellationToken)
+        public async Task<Result<List<AnimalViewModel>>> Handle(GetAllAnimalsByClientQuery query, CancellationToken cancellationToken)
         {
-            var animal = await _unitOfWork.Animals.GetAllAnimalAsync(request.ClientId);
+            var animal = await _unitOfWork.Animals.GetAllAnimalAsync(query.ClientId);
             if(animal == null)
             {
                 return Result<List<AnimalViewModel>>.Failure("Não foram encontrados animais.");

@@ -18,9 +18,8 @@ namespace CliniCare.Application.Commands.Animals
         public DateTime DateOfBirth { get; set; }
         public string Gender { get; set; }
 
-        public UpdateAnimalCommand(int id, string species, string name, string breed, DateTime dateOfBirth, string gender)
+        public UpdateAnimalCommand(string species, string name, string breed, DateTime dateOfBirth, string gender)
         {
-            Id = id;
             Species = species;
             Name = name;
             Breed = breed;
