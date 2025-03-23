@@ -14,5 +14,6 @@ namespace CliniCare.Domain.Repositories
         Task<IEnumerable<Scheduling>> GetAllSchedulingAsync();
         Task<Scheduling> GetSchedulingByIdAsync(int id);
         Task DeleteSchedulingAsync(Scheduling scheduling);
+        Task<IEnumerable<Scheduling>> GetAllSchedulingsByClientIdAsync(int clientId);
     }
 }

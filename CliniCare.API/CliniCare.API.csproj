@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CliniCare.Application\CliniCare.Application.csproj" />
-    <ProjectReference Include="..\CliniCare.Core\CliniCare.Core.csproj" />
     <ProjectReference Include="..\CliniCare.Infrastructure\CliniCare.Infrastructure.csproj" />
   </ItemGroup>
 

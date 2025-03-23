@@ -22,7 +22,6 @@ namespace CliniCare.Infrastructure.Repository
         {
 
             await _dbContext.Schedulings.AddAsync(scheduling);
-            await _dbContext.SaveChangesAsync();
         }
 
         public async Task DeleteSchedulingAsync(Scheduling scheduling)
@@ -40,7 +39,17 @@ namespace CliniCare.Infrastructure.Repository
              .Include(s => s.Animal)
              .ToListAsync();
         }
-
+        public async Task<IEnumerable<Scheduling>> GetAllSchedulingsByClientIdAsync(int clientId)
+        {
+           
+            return await _dbContext.Schedulings
+                .Where(s => s.ClientId == clientId)
+                .Include(s => s.Animal)  
+                .Include(s => s.Veterinarian)
+                .Include(s => s.Procedure)
+                .Include(s => s.Client)   
+                .ToListAsync();
+        }
         public async Task<Scheduling> GetSchedulingByIdAsync(int id)
         {
             return await _dbContext.Schedulings.FirstOrDefaultAsync(s => s.Id == id);
@@ -49,7 +58,6 @@ namespace CliniCare.Infrastructure.Repository
         public async Task UpdateSchedulingAsync(Scheduling scheduling)
         {
             _dbContext.Schedulings.Update(scheduling);
-            await _dbContext.SaveChangesAsync();
         }
         public async Task<bool> ExistsAsync(int id)
         {

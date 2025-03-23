@@ -10,18 +10,21 @@ public class UnitOfWork : IUnitOfWork
     public IVeterinarianRepository Veterinarians { get; }
     public IAnimalRepository Animals { get; }
     public IVeterinaryProcedureRepository VeterinaryProcedures { get; }
+    public ISchedulingRepository Schedulings { get; }
 
     public UnitOfWork(ApiDbContext context,
                       IClientRepository clientRepository,
                       IVeterinarianRepository veterinarianRepository,
                       IAnimalRepository animalRepository,
-                      IVeterinaryProcedureRepository veterinaryProcedures)
+                      IVeterinaryProcedureRepository veterinaryProcedures,
+                      ISchedulingRepository schedulings)
     {
         _context = context;
         Clients = clientRepository;
         Veterinarians = veterinarianRepository;
         Animals = animalRepository;
         VeterinaryProcedures = veterinaryProcedures;
+        Schedulings = schedulings;
     }
 
     public async Task<bool> CommitAsync()
