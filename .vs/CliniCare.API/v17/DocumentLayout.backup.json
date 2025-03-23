@@ -3,284 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\controllers\\procedurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\controllers\\procedurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\clinicare.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\clinicare.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\procedure\\getprocedurebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\procedure\\getprocedurebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\helpers\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\helpers\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\veterinaryprocedurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\veterinaryprocedurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\persistence\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\persistence\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\animal\\getanimalbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\animal\\getanimalbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\procedure\\getprocedurebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\procedure\\getprocedurebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\procedures\\insertprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\procedures\\insertprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\procedure\\getallprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\procedure\\getallprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\animal\\getanimalbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\animal\\getanimalbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\procedure\\getallprocedurequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\procedure\\getallprocedurequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\procedures\\insertprocedurecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\procedures\\insertprocedurecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\veterinarianrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\veterinarianrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\repositories\\iveterinaryprocedurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\repositories\\iveterinaryprocedurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\viewmodels\\procedureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\viewmodels\\procedureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\animal\\getallanimalsbyclientquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\animal\\getallanimalsbyclientquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\repositories\\ianimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\repositories\\ianimalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\animal\\getallanimalsbyclienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\animal\\getallanimalsbyclienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\procedures\\deleteprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\procedures\\deleteprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\procedures\\deleteprocedurecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\procedures\\deleteprocedurecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\deleteanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\deleteanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\insertanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\insertanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\updateanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\updateanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\procedures\\updateprocedurecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\procedures\\updateprocedurecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\insertanimalhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\insertanimalhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\procedures\\updateprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\procedures\\updateprocedurehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\updateanimalhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\updateanimalhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\controllers\\veterinariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\controllers\\veterinariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\veterinaryprocedurevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\veterinaryprocedurevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\veterinarycarerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\veterinarycarerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\services\\interfaces\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\services\\interfaces\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\services\\interfaces\\iapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\services\\interfaces\\iapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\services\\implementations\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\services\\implementations\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\updateclientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\updateclientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\animalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\animalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\clientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\clientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\veterinarycare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\veterinarycare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\scheduling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\scheduling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\services\\implementations\\veterinarianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\services\\implementations\\veterinarianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\veterinarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\veterinarian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\deleteanimalhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\deleteanimalhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\clinicare.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\clinicare.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\clinicare.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\clinicare.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\repositories\\iveterinarianrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\repositories\\iveterinarianrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\viewmodels\\animalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\viewmodels\\animalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\loginveterinarianvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\loginveterinarianvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\schedulingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\schedulingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\loginclientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\loginclientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\veterinarianvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\veterinarianvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\inputmodels\\animal\\updateanimalinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\inputmodels\\animal\\updateanimalinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\services\\interfaces\\iveterinarianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\services\\interfaces\\iveterinarianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\clinicare.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\clinicare.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\persistence\\configurations\\veterinarianconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\persistence\\configurations\\veterinarianconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\vetcares\\insertvetcarecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\vetcares\\insertvetcarecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\inputmodels\\client\\updateclientinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\inputmodels\\client\\updateclientinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.domain\\models\\veterinarycare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407EC4D7-C633-4782-9EF9-A78DAC67D1D6}|CliniCare.Domain\\CliniCare.Domain.csproj|solutionrelative:clinicare.domain\\models\\veterinarycare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\validators\\veterinarycarevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\validators\\veterinarycarevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\persistence\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\persistence\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\migrations\\20250318122725_update tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\migrations\\20250318122725_update tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\persistence\\configurations\\veterinarycareconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\persistence\\configurations\\veterinarycareconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.infrastructure\\repository\\veterinarycarerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{844C2E17-271B-4A9E-93EF-5A09D01649B8}|CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj|solutionrelative:clinicare.infrastructure\\repository\\veterinarycarerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\commands\\animals\\insertanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\commands\\animals\\insertanimalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.application\\queries\\schedulings\\getschedulingbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6478872D-4E58-4059-8E2E-7D6A8F54B174}|CliniCare.Application\\CliniCare.Application.csproj|solutionrelative:clinicare.application\\queries\\schedulings\\getschedulingbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|c:\\users\\faire\\source\\repos\\clinicare.api\\clinicare.api\\controllers\\schedulingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895BDF62-00AB-4F90-8B9F-E7BD55D5BBB2}|CliniCare.API\\CliniCare.API.csproj|solutionrelative:clinicare.api\\controllers\\schedulingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -290,472 +58,91 @@
       "DocumentGroups": [
         {
           "DockedWidth": 839,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "LoginVeterinarianValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\LoginVeterinarianValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\LoginVeterinarianValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\LoginVeterinarianValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\LoginVeterinarianValidator.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T01:16:06.524Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetProcedureByIdHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdHandler.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T01:50:35.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetAnimalByIdHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAnimalByIdHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Animal\\GetAnimalByIdHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAnimalByIdHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Animal\\GetAnimalByIdHandler.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwBoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T02:13:35.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProcedureController.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\ProcedureController.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\Controllers\\ProcedureController.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\ProcedureController.cs",
-              "RelativeToolTip": "CliniCare.API\\Controllers\\ProcedureController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:47:00.721Z",
+              "Title": "CliniCare.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
+              "RelativeToolTip": "CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T22:18:40.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VeterinaryProcedureRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\VeterinaryProcedureRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Repository\\VeterinaryProcedureRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\VeterinaryProcedureRepository.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Repository\\VeterinaryProcedureRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwCgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:34:25.33Z",
+              "DocumentIndex": 1,
+              "Title": "CliniCare.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj",
+              "RelativeDocumentMoniker": "CliniCare.Domain\\CliniCare.Domain.csproj",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj",
+              "RelativeToolTip": "CliniCare.Domain\\CliniCare.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T22:22:12.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Helpers\\Result.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Helpers\\Result.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Helpers\\Result.cs",
-              "RelativeToolTip": "CliniCare.Application\\Helpers\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:12:36.201Z",
+              "Title": "CliniCare.API.csproj",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
+              "RelativeDocumentMoniker": "CliniCare.API\\CliniCare.API.csproj",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
+              "RelativeToolTip": "CliniCare.API\\CliniCare.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T22:22:00.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApiDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAEwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T21:59:18.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetProcedureByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdQuery.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdQuery.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdQuery.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Procedure\\GetProcedureByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T01:50:20.361Z",
+              "DocumentIndex": 3,
+              "Title": "CliniCare.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj",
+              "RelativeDocumentMoniker": "CliniCare.Application\\CliniCare.Application.csproj",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj",
+              "RelativeToolTip": "CliniCare.Application\\CliniCare.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T22:21:56.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AnimalController.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\AnimalController.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\Controllers\\AnimalController.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\AnimalController.cs",
-              "RelativeToolTip": "CliniCare.API\\Controllers\\AnimalController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAwDwAAAAIAAAAAAAAAA==",
+              "Title": "ApiDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
+              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
+              "RelativeToolTip": "CliniCare.Infrastructure\\Persistence\\ApiDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:58:47.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T22:18:54.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VeterinaryCareConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinaryCareConfiguration.cs",
+              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinaryCareConfiguration.cs",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinaryCareConfiguration.cs",
+              "RelativeToolTip": "CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinaryCareConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T22:18:51.651Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "InsertProcedureHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\InsertProcedureHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Procedures\\InsertProcedureHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\InsertProcedureHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Procedures\\InsertProcedureHandler.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAEwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:28:29.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GetAllProcedureQuery.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetAllProcedureQuery.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Procedure\\GetAllProcedureQuery.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetAllProcedureQuery.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Procedure\\GetAllProcedureQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T22:11:16.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetAnimalByIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAnimalByIdQuery.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Animal\\GetAnimalByIdQuery.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAnimalByIdQuery.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Animal\\GetAnimalByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T02:11:14.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetAllProcedureHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetAllProcedureHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Procedure\\GetAllProcedureHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Procedure\\GetAllProcedureHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Procedure\\GetAllProcedureHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:34:22.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Repository\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\UnitOfWork.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Repository\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T14:33:29.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InsertProcedureCommand.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\InsertProcedureCommand.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Procedures\\InsertProcedureCommand.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\InsertProcedureCommand.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Procedures\\InsertProcedureCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAEwBsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:28:52.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VeterinarianRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\VeterinarianRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Repository\\VeterinarianRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\VeterinarianRepository.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Repository\\VeterinarianRepository.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAuwCoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:30:02.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IVeterinaryProcedureRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IVeterinaryProcedureRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Repositories\\IVeterinaryProcedureRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IVeterinaryProcedureRepository.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Repositories\\IVeterinaryProcedureRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T22:00:35.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\ClientRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Repository\\ClientRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\ClientRepository.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Repository\\ClientRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwDIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T15:55:33.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProcedureViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\ViewModels\\ProcedureViewModel.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\ViewModels\\ProcedureViewModel.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\ViewModels\\ProcedureViewModel.cs",
-              "RelativeToolTip": "CliniCare.Application\\ViewModels\\ProcedureViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:29:53.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GetAllAnimalsByClientQuery.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientQuery.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientQuery.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientQuery.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T01:18:40.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IAnimalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IAnimalRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Repositories\\IAnimalRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IAnimalRepository.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Repositories\\IAnimalRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T16:03:57.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GetAllAnimalsByClientHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Queries\\Animal\\GetAllAnimalsByClientHandler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBgAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T01:26:08.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AnimalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\AnimalRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Repository\\AnimalRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\AnimalRepository.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Repository\\AnimalRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAwwCMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T01:11:09.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DeleteProcedureHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\DeleteProcedureHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Procedures\\DeleteProcedureHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\DeleteProcedureHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Procedures\\DeleteProcedureHandler.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAnwCEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:54:58.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DeleteProcedureCommand.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\DeleteProcedureCommand.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Procedures\\DeleteProcedureCommand.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\DeleteProcedureCommand.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Procedures\\DeleteProcedureCommand.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAhwA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:49:29.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "InsertAnimalCommand.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAxwBQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T15:58:58.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DeleteAnimalCommand.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\DeleteAnimalCommand.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\DeleteAnimalCommand.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\DeleteAnimalCommand.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\DeleteAnimalCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T21:21:05.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UpdateAnimalCommand.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\UpdateAnimalCommand.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\UpdateAnimalCommand.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\UpdateAnimalCommand.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\UpdateAnimalCommand.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T18:39:55.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UpdateProcedureHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\UpdateProcedureHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Procedures\\UpdateProcedureHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\UpdateProcedureHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Procedures\\UpdateProcedureHandler.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T14:37:52.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UpdateProcedureCommand.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\UpdateProcedureCommand.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Procedures\\UpdateProcedureCommand.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Procedures\\UpdateProcedureCommand.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Procedures\\UpdateProcedureCommand.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T14:36:14.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "InsertAnimalHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\InsertAnimalHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\InsertAnimalHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\InsertAnimalHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\InsertAnimalHandler.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T14:12:12.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UpdateAnimalHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\UpdateAnimalHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\UpdateAnimalHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\UpdateAnimalHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\UpdateAnimalHandler.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T23:14:00.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Program.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\Program.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Program.cs",
-              "RelativeToolTip": "CliniCare.API\\Program.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T11:53:00.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "CliniCare.API\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:07:27.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "VeterinarianController.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\VeterinarianController.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\Controllers\\VeterinarianController.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\VeterinarianController.cs",
-              "RelativeToolTip": "CliniCare.API\\Controllers\\VeterinarianController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:07:48.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "VeterinaryProcedureValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\VeterinaryProcedureValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\VeterinaryProcedureValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\VeterinaryProcedureValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\VeterinaryProcedureValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:05:29.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
               "Title": "VeterinaryCareRepository.cs",
               "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Repository\\VeterinaryCareRepository.cs",
               "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Repository\\VeterinaryCareRepository.cs",
@@ -763,404 +150,67 @@
               "RelativeToolTip": "CliniCare.Infrastructure\\Repository\\VeterinaryCareRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T13:41:47.968Z"
+              "WhenOpened": "2025-03-23T22:18:47.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "IClientService.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Interfaces\\IClientService.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Services\\Interfaces\\IClientService.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Interfaces\\IClientService.cs",
-              "RelativeToolTip": "CliniCare.Application\\Services\\Interfaces\\IClientService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "InsertAnimalCommand.cs",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
+              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
+              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\InsertAnimalCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:47:09.421Z"
+              "WhenOpened": "2025-03-23T22:18:25.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "IApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Interfaces\\IApplicationUser.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Services\\Interfaces\\IApplicationUser.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Interfaces\\IApplicationUser.cs",
-              "RelativeToolTip": "CliniCare.Application\\Services\\Interfaces\\IApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "InsertVetCareCommand.cs",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\VetCares\\InsertVetCareCommand.cs",
+              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\VetCares\\InsertVetCareCommand.cs",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\VetCares\\InsertVetCareCommand.cs",
+              "RelativeToolTip": "CliniCare.Application\\Commands\\VetCares\\InsertVetCareCommand.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:27:50.312Z"
+              "WhenOpened": "2025-03-23T22:14:42.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ClientService.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Implementations\\ClientService.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Services\\Implementations\\ClientService.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Implementations\\ClientService.cs",
-              "RelativeToolTip": "CliniCare.Application\\Services\\Implementations\\ClientService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAJIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:12:09.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UpdateClientValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\UpdateClientValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\UpdateClientValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\UpdateClientValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\UpdateClientValidator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:05:00.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwA8AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T14:34:48.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AnimalValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\AnimalValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\AnimalValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\AnimalValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\AnimalValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T01:20:07.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ClientValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\ClientValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\ClientValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\ClientValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\ClientValidator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:06:05.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Scheduling.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Scheduling.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\Scheduling.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Scheduling.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\Scheduling.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T16:54:55.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 5,
               "Title": "VeterinaryCare.cs",
               "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\VeterinaryCare.cs",
               "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\VeterinaryCare.cs",
               "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\VeterinaryCare.cs",
               "RelativeToolTip": "CliniCare.Domain\\Models\\VeterinaryCare.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:51:23.707Z"
+              "WhenOpened": "2025-03-23T22:13:37.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Procedure.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Procedure.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\Procedure.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Procedure.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\Procedure.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "GetSchedulingByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Schedulings\\GetSchedulingByIdHandler.cs",
+              "RelativeDocumentMoniker": "CliniCare.Application\\Queries\\Schedulings\\GetSchedulingByIdHandler.cs",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Queries\\Schedulings\\GetSchedulingByIdHandler.cs",
+              "RelativeToolTip": "CliniCare.Application\\Queries\\Schedulings\\GetSchedulingByIdHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T16:54:53.236Z"
+              "WhenOpened": "2025-03-23T22:11:01.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "VeterinarianService.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Implementations\\VeterinarianService.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Services\\Implementations\\VeterinarianService.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Implementations\\VeterinarianService.cs",
-              "RelativeToolTip": "CliniCare.Application\\Services\\Implementations\\VeterinarianService.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAABgAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "SchedulingController.cs",
+              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\SchedulingController.cs",
+              "RelativeDocumentMoniker": "CliniCare.API\\Controllers\\SchedulingController.cs",
+              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\SchedulingController.cs",
+              "RelativeToolTip": "CliniCare.API\\Controllers\\SchedulingController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAwFQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:10:07.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\ApplicationUser.cs",
-              "RelativeToolTip": "CliniCare.API\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:29:54.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "20250318122725_Update tables.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Migrations\\20250318122725_Update tables.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Migrations\\20250318122725_Update tables.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Migrations\\20250318122725_Update tables.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Migrations\\20250318122725_Update tables.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:27:25.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:24:16.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\Role.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Role.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:24:30.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Client.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\Client.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:43:14.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Animal.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Animal.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\Animal.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Animal.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\Animal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T12:24:13.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Veterinarian.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Veterinarian.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Models\\Veterinarian.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Models\\Veterinarian.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Models\\Veterinarian.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:11:31.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "DeleteAnimalHandler.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\DeleteAnimalHandler.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Commands\\Animals\\DeleteAnimalHandler.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Commands\\Animals\\DeleteAnimalHandler.cs",
-              "RelativeToolTip": "CliniCare.Application\\Commands\\Animals\\DeleteAnimalHandler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T21:25:05.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "CliniCare.API.csproj",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
-              "RelativeDocumentMoniker": "CliniCare.API\\CliniCare.API.csproj",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
-              "RelativeToolTip": "CliniCare.API\\CliniCare.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-16T22:29:27.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CliniCare.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CliniCare.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:07:55.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "IClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IClientRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Repositories\\IClientRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IClientRepository.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Repositories\\IClientRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T16:15:54.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "IVeterinarianRepository.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IVeterinarianRepository.cs",
-              "RelativeDocumentMoniker": "CliniCare.Domain\\Repositories\\IVeterinarianRepository.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\Repositories\\IVeterinarianRepository.cs",
-              "RelativeToolTip": "CliniCare.Domain\\Repositories\\IVeterinarianRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:38:15.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "AnimalViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\ViewModels\\AnimalViewModel.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\ViewModels\\AnimalViewModel.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\ViewModels\\AnimalViewModel.cs",
-              "RelativeToolTip": "CliniCare.Application\\ViewModels\\AnimalViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T01:23:30.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "UpdateAnimalInputModel.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\InputModels\\Animal\\UpdateAnimalInputModel.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\InputModels\\Animal\\UpdateAnimalInputModel.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\InputModels\\Animal\\UpdateAnimalInputModel.cs",
-              "RelativeToolTip": "CliniCare.Application\\InputModels\\Animal\\UpdateAnimalInputModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T01:12:40.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "IVeterinarianService.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Interfaces\\IVeterinarianService.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Services\\Interfaces\\IVeterinarianService.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Services\\Interfaces\\IVeterinarianService.cs",
-              "RelativeToolTip": "CliniCare.Application\\Services\\Interfaces\\IVeterinarianService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:23:16.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "CliniCare.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj",
-              "RelativeDocumentMoniker": "CliniCare.Application\\CliniCare.Application.csproj",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj",
-              "RelativeToolTip": "CliniCare.Application\\CliniCare.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-12T19:48:49.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "VeterinarianConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinarianConfiguration.cs",
-              "RelativeDocumentMoniker": "CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinarianConfiguration.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinarianConfiguration.cs",
-              "RelativeToolTip": "CliniCare.Infrastructure\\Persistence\\Configurations\\VeterinarianConfiguration.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T17:21:08.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "UpdateClientInputModel.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\InputModels\\Client\\UpdateClientInputModel.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\InputModels\\Client\\UpdateClientInputModel.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\InputModels\\Client\\UpdateClientInputModel.cs",
-              "RelativeToolTip": "CliniCare.Application\\InputModels\\Client\\UpdateClientInputModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:02:19.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "SchedulingValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\SchedulingValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\SchedulingValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\SchedulingValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\SchedulingValidator.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:05:00.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "VeterinarianValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\VeterinarianValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\VeterinarianValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\VeterinarianValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\VeterinarianValidator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:04:40.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "VeterinaryCareValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\VeterinaryCareValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\VeterinaryCareValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\VeterinaryCareValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\VeterinaryCareValidator.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:05:22.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "LoginClientValidator.cs",
-              "DocumentMoniker": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\LoginClientValidator.cs",
-              "RelativeDocumentMoniker": "CliniCare.Application\\Validators\\LoginClientValidator.cs",
-              "ToolTip": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\Validators\\LoginClientValidator.cs",
-              "RelativeToolTip": "CliniCare.Application\\Validators\\LoginClientValidator.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:06:04.972Z"
+              "WhenOpened": "2025-03-23T17:56:35.288Z"
             }
           ]
         }
