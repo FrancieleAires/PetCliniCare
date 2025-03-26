@@ -27,7 +27,8 @@ namespace CliniCare.Application.Commands.VetCare
                 ProblemDescription = ProblemDescription,
                 Treatment = Treatment,
                 SchedulingId = SchedulingId,
-                AnimalId = AnimalId
+                AnimalId = AnimalId,
+                VeterinarianId  = VeterinarianId
 
             };
         }
