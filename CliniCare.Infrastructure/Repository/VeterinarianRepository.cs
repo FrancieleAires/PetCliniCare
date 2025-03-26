@@ -31,7 +31,7 @@ namespace CliniCare.Infrastructure.Repository
                 .ToListAsync();
         }
 
-        public async Task<Veterinarian> GetVeterinarianByIdAsync(int id)
+        public async Task<Veterinarian?> GetVeterinarianByIdAsync(int id)
         {
             return await _dbContext.Veterinarians
             .Include(v => v.ApplicationUser)
@@ -57,7 +57,7 @@ namespace CliniCare.Infrastructure.Repository
             return await _dbContext.Veterinarians.AnyAsync(c => c.Id == id);
         }
 
-        public async Task<Veterinarian> GetCurrentVeterinarianAsync(int userId)
+        public async Task<Veterinarian?> GetCurrentVeterinarianAsync(int userId)
         {
             return await _dbContext.Veterinarians
                 .Include(c => c.ApplicationUser)

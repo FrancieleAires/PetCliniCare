@@ -21,13 +21,13 @@ namespace CliniCare.Infrastructure.Repository
         public async Task AddVeterinaryCareAsync(VeterinaryCare veterinaryCare)
         {
             await _dbContext.VeterinaryCares.AddAsync(veterinaryCare);
-            await _dbContext.SaveChangesAsync();
+            
         }
 
         public async Task DeleteVeterinaryCareAsync(VeterinaryCare veterinaryCare)
         {
             _dbContext.VeterinaryCares.Remove(veterinaryCare);
-            await _dbContext.SaveChangesAsync();
+            
         }
 
         public async Task<IEnumerable<VeterinaryCare>> GetAllVeterinaryCareAsync()
@@ -35,18 +35,23 @@ namespace CliniCare.Infrastructure.Repository
             return await _dbContext.VeterinaryCares
              .Include(s => s.Veterinarian)
              .Include(s => s.Animal)
+             .Include(s => s.Scheduling)
              .ToListAsync();
         }
 
-        public async Task<VeterinaryCare> GetCareByIdAsync(int id)
+        public async Task<VeterinaryCare?> GetCareByIdAsync(int id)
         {
-            return await _dbContext.VeterinaryCares.FirstOrDefaultAsync( v => v.Id == id);
+            return await _dbContext.VeterinaryCares
+        .Include(v => v.Veterinarian) 
+        .Include(v => v.Animal)       
+        .Include(v => v.Scheduling)   
+        .FirstOrDefaultAsync(v => v.Id == id);
         }
 
         public async Task UpdateVeterinaryCareAsync(VeterinaryCare veterinaryCare)
         {
             _dbContext.VeterinaryCares.Update(veterinaryCare);
-            await _dbContext.SaveChangesAsync();
+            
         }
         public async Task<bool> ExistsAsync(int id)
         {

@@ -42,16 +42,18 @@ namespace CliniCare.Infrastructure.Repository
                 .ToListAsync();
         }
 
-        public async Task<Animal> GetAnimalByClientIdAsync(int id)
+        public async Task<Animal?> GetAnimalByClientIdAsync(int id)
         {
             return await _dbContext.Animals
                 .Include(c => c.Client)
                 .FirstOrDefaultAsync(a => a.Id == id);
         }
 
-        public async Task<Animal> GetAnimalByIdAsync(int id)
+        public async Task<Animal?> GetAnimalByIdAsync(int id)
         {
-            return await _dbContext.Animals.FirstOrDefaultAsync(a => a.Id == id);
+            return await _dbContext.Animals
+                .Include(c => c.Client)
+                .FirstOrDefaultAsync(a => a.Id == id);
                 
         }
         public async Task UpdateAnimalAsync(Animal animal)

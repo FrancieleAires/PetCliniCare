@@ -50,9 +50,14 @@ namespace CliniCare.Infrastructure.Repository
                 .Include(s => s.Client)   
                 .ToListAsync();
         }
-        public async Task<Scheduling> GetSchedulingByIdAsync(int id)
+        public async Task<Scheduling?> GetSchedulingByIdAsync(int id)
         {
-            return await _dbContext.Schedulings.FirstOrDefaultAsync(s => s.Id == id);
+            return await _dbContext.Schedulings
+                .Include(s => s.Animal)
+                .Include(s => s.Veterinarian)
+                .Include(s => s.Procedure)
+                .Include(s => s.Client)
+                .FirstOrDefaultAsync(s => s.Id == id);
         }
 
         public async Task UpdateSchedulingAsync(Scheduling scheduling)

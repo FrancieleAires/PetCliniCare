@@ -13,6 +13,6 @@ namespace CliniCare.Domain.Repositories
         Task UpdateVeterinaryCareAsync(VeterinaryCare veterinaryCare);
         Task DeleteVeterinaryCareAsync(VeterinaryCare veterinaryCare);
         Task<IEnumerable<VeterinaryCare>> GetAllVeterinaryCareAsync();
-        Task<VeterinaryCare> GetCareByIdAsync(int id);
+        Task<VeterinaryCare?> GetCareByIdAsync(int id);
     }
 }

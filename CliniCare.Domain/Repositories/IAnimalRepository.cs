@@ -12,8 +12,8 @@ namespace CliniCare.Domain.Repositories
         Task AddAnimalAsync(Animal animal);
         Task UpdateAnimalAsync(Animal animal);
         Task<IEnumerable<Animal>> GetAllAnimalAsync(int clientId);
-        Task<Animal> GetAnimalByIdAsync(int id);
-        Task<Animal> GetAnimalByClientIdAsync(int id);
+        Task<Animal?> GetAnimalByIdAsync(int id);
+        Task<Animal?> GetAnimalByClientIdAsync(int id);
         Task<Animal> DeleteAnimalAsync(int id);
         Task<bool> ExistsAsync(int id);
         
