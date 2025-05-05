@@ -8,6 +8,7 @@ namespace CliniCare.API.Controllers
 {
     [Authorize(Roles = "Admin")]
     [ApiController]
+    [Route("api/veterinarian")]
     public class VeterinarianController : ControllerBase
     {
         private readonly IVeterinarianService _veterinianService;

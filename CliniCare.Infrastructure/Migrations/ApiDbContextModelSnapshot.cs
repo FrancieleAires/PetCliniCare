@@ -157,6 +157,37 @@ namespace CliniCare.Infrastructure.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("CliniCare.Domain.Models.Hospitalization", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AdmissionDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("AnimalId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DischargeDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Hospitalizations");
+                });
+
             modelBuilder.Entity("CliniCare.Domain.Models.Procedure", b =>
                 {
                     b.Property<int>("Id")
@@ -451,6 +482,17 @@ namespace CliniCare.Infrastructure.Migrations
                     b.Navigation("ApplicationUser");
                 });
 
+            modelBuilder.Entity("CliniCare.Domain.Models.Hospitalization", b =>
+                {
+                    b.HasOne("CliniCare.Domain.Models.Animal", "Animal")
+                        .WithMany("Hospitalizations")
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
+                });
+
             modelBuilder.Entity("CliniCare.Domain.Models.Scheduling", b =>
                 {
                     b.HasOne("CliniCare.Domain.Models.Animal", "Animal")
@@ -573,6 +615,11 @@ namespace CliniCare.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("CliniCare.Domain.Models.Animal", b =>
+                {
+                    b.Navigation("Hospitalizations");
                 });
 
             modelBuilder.Entity("CliniCare.Domain.Models.Client", b =>

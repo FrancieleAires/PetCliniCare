@@ -1,5 +1,9 @@
-﻿using CliniCare.Application.Commands.Procedures;
+﻿using CliniCare.Application.Commands.Procedures.DeleteProcedure;
+using CliniCare.Application.Commands.Procedures.InsertProcedure;
+using CliniCare.Application.Commands.Procedures.UpdateProcedure;
 using CliniCare.Application.Queries.Procedure;
+using CliniCare.Application.Queries.Procedure.GetAllProcedure;
+using CliniCare.Application.Queries.Procedure.GetIdProcedure;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +12,7 @@ namespace CliniCare.API.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("procedures")]
+    [Route("api/procedures")]
     public class ProcedureController : ControllerBase
     { 
 

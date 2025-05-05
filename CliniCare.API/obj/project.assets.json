@@ -1250,16 +1250,6 @@
           "bin/placeholder/CliniCare.Application.dll": {}
         }
       },
-      "CliniCare.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/CliniCare.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CliniCare.Core.dll": {}
-        }
-      },
       "CliniCare.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3401,11 +3391,6 @@
       "path": "../CliniCare.Application/CliniCare.Application.csproj",
       "msbuildProject": "../CliniCare.Application/CliniCare.Application.csproj"
     },
-    "CliniCare.Core/1.0.0": {
-      "type": "project",
-      "path": "../CliniCare.Core/CliniCare.Core.csproj",
-      "msbuildProject": "../CliniCare.Core/CliniCare.Core.csproj"
-    },
     "CliniCare.Domain/1.0.0": {
       "type": "project",
       "path": "../CliniCare.Domain/CliniCare.Domain.csproj",
@@ -3420,7 +3405,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "CliniCare.Application >= 1.0.0",
-      "CliniCare.Core >= 1.0.0",
       "CliniCare.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -3462,9 +3446,6 @@
           "projectReferences": {
             "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj": {
               "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj"
-            },
-            "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Core\\CliniCare.Core.csproj": {
-              "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Core\\CliniCare.Core.csproj"
             },
             "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj"

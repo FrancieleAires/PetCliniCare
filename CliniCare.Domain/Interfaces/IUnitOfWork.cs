@@ -17,6 +17,8 @@ namespace CliniCare.Domain.Interfaces
 
         ISchedulingRepository Schedulings { get; }
 
+        IVeterinaryCareRepository VeterinaryCares { get; }
+
 
         Task<bool> CommitAsync();
     }

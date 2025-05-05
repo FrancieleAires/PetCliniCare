@@ -1,5 +1,9 @@
-﻿using CliniCare.Application.Commands.Animals;
+﻿using CliniCare.Application.Commands.Animals.DeleteAnimal;
+using CliniCare.Application.Commands.Animals.InsertAnimal;
+using CliniCare.Application.Commands.Animals.UpdateAnimal;
 using CliniCare.Application.Queries.Animal;
+using CliniCare.Application.Queries.Animal.GetAllAnimal;
+using CliniCare.Application.Queries.Animal.GetIdAnimal;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

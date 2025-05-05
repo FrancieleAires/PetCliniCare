@@ -1,6 +1,12 @@
 ﻿using CliniCare.Application.Commands.Schedulings;
+using CliniCare.Application.Commands.Schedulings.ConfirmScheduling;
+using CliniCare.Application.Commands.Schedulings.FinalizeScheduling;
+using CliniCare.Application.Commands.Schedulings.InsertScheduling;
 using CliniCare.Application.Helpers;
 using CliniCare.Application.Queries.Schedulings;
+using CliniCare.Application.Queries.Schedulings.GetAllScheduling;
+using CliniCare.Application.Queries.Schedulings.GetIdScheduling;
+using CliniCare.Application.Queries.Schedulings.GetUserIdScheduling;
 using CliniCare.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -10,7 +16,7 @@ namespace CliniCare.API.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("scheduling")]
+    [Route("api/scheduling")]
     public class SchedulingController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -108,15 +114,13 @@ namespace CliniCare.API.Controllers
             if (errors != null && errors.Any())
             {
                 var firstError = errors.First();
-                // Mapeia o código de status com base no tipo do erro
                 var statusCode = (int)firstError.Type;
 
-                // Se você quiser retornar todos os erros, basta juntar as mensagens
                 return StatusCode(statusCode, string.Join(", ", errors.Select(e => e.Message)));
             }
             else
             {
-                // Caso não haja erros, retorna um erro genérico
+               
                 return StatusCode(500, "Erro desconhecido");
             }
         }

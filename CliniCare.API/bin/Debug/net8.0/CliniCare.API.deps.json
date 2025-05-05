@@ -9,7 +9,6 @@
       "CliniCare.API/1.0.0": {
         "dependencies": {
           "CliniCare.Application": "1.0.0",
-          "CliniCare.Core": "1.0.0",
           "CliniCare.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },

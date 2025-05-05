@@ -16,5 +16,7 @@ namespace CliniCare.Domain.Models
         public string Gender { get; set; }
         public int ClientId { get; set; }
         public Client Client { get; set; }
+
+        public List<Hospitalization> Hospitalizations { get; set; } = new List<Hospitalization>();
     }
 }

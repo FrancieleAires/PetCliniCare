@@ -1,6 +1,9 @@
-﻿using CliniCare.Application.Commands.VetCare;
-using CliniCare.Application.Commands.VetCares;
+﻿using CliniCare.Application.Commands.VetCares.DeleteVetCare;
+using CliniCare.Application.Commands.VetCares.InsertVetCare;
+using CliniCare.Application.Commands.VetCares.UpdateVetCare;
 using CliniCare.Application.Queries.VeterinaryCare;
+using CliniCare.Application.Queries.VeterinaryCare.GetAllVetCare;
+using CliniCare.Application.Queries.VeterinaryCare.GetIdVetCare;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CliniCare.API.Controllers
 {
     [Authorize]
-    [Route("vet-care")]
+    [Route("api/vet-care")]
     [ApiController]
     public class VeterinaryCareController : ControllerBase
     {

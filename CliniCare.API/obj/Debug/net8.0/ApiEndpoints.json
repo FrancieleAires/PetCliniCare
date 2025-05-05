@@ -1,47 +1,5 @@
 [
   {
-    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
-    "Method": "GetVeterinarianByIdAsync",
-    "RelativePath": "{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
-    "Method": "DeleteVeterinarianAsync",
-    "RelativePath": "{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
-    "Method": "GetAllVeterinariansAsync",
-    "RelativePath": "all-veterinarians",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "CliniCare.API.Controllers.AnimalController",
     "Method": "GetAnimalByIdAsync",
     "RelativePath": "api/animals/{animalId}",
@@ -99,7 +57,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "CliniCare.Application.Commands.Animals.InsertAnimalCommand",
+        "Type": "CliniCare.Application.Commands.Animals.InsertAnimal.InsertAnimalCommand",
         "IsRequired": true
       }
     ],
@@ -115,7 +73,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "CliniCare.Application.Commands.Animals.UpdateAnimalCommand",
+        "Type": "CliniCare.Application.Commands.Animals.UpdateAnimal.UpdateAnimalCommand",
         "IsRequired": true
       }
     ],
@@ -195,6 +153,191 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "DeleteProcedureAsync",
+    "RelativePath": "api/procedures/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Procedures.DeleteProcedure.DeleteProcedureCommand",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "GetProcedureByIdAsync",
+    "RelativePath": "api/procedures/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "CreateProceduresAsync",
+    "RelativePath": "api/procedures/create-procedures",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Procedures.InsertProcedure.InsertProcedureCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "GetAllProceduresAsync",
+    "RelativePath": "api/procedures/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
+    "Method": "UpdateProcedureAsync",
+    "RelativePath": "api/procedures/update-procedure",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Procedures.UpdateProcedure.UpdateProcedureCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "CreateSchedulingAsync",
+    "RelativePath": "api/scheduling",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.Schedulings.InsertScheduling.InsertSchedulingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "GetAllSchedulingsAsync",
+    "RelativePath": "api/scheduling",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "GetSchedulingByIdAsync",
+    "RelativePath": "api/scheduling/{schedulingId}/by-id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schedulingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "CancelSchedulingAsync",
+    "RelativePath": "api/scheduling/{schedulingId}/cancel",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schedulingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "ConfirmSchedulingAsync",
+    "RelativePath": "api/scheduling/{schedulingId}/confirm",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schedulingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "FinalizeSchedulingAsync",
+    "RelativePath": "api/scheduling/{schedulingId}/finalize",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schedulingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.SchedulingController",
+    "Method": "GetSchedulingByUserIdAsync",
+    "RelativePath": "api/scheduling/{userId}/by-client",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CliniCare.API.Controllers.AuthController",
     "Method": "LoginClientAsync",
     "RelativePath": "api/users/login-client",
@@ -259,62 +402,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
-    "Method": "DeleteProcedureAsync",
-    "RelativePath": "procedures/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "CliniCare.Application.Commands.Procedures.DeleteProcedureCommand",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
-    "Method": "GetProcedureByIdAsync",
-    "RelativePath": "procedures/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
-    "Method": "CreateProceduresAsync",
-    "RelativePath": "procedures/create-procedures",
+    "ContainingType": "CliniCare.API.Controllers.VeterinaryCareController",
+    "Method": "CreateVeterinaryCareAsync",
+    "RelativePath": "api/vet-care",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "command",
-        "Type": "CliniCare.Application.Commands.Procedures.InsertProcedureCommand",
+        "Type": "CliniCare.Application.Commands.VetCares.InsertVetCare.InsertVetCareCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
-    "Method": "GetAllProceduresAsync",
-    "RelativePath": "procedures/get-all",
+    "ContainingType": "CliniCare.API.Controllers.VeterinaryCareController",
+    "Method": "UpdateVeterinaryCareAsync",
+    "RelativePath": "api/vet-care",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CliniCare.Application.Commands.VetCares.UpdateVetCare.UpdateVetCareCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinaryCareController",
+    "Method": "GetAllVeterinaryCareAsync",
+    "RelativePath": "api/vet-care",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -322,16 +444,32 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CliniCare.API.Controllers.ProcedureController",
-    "Method": "UpdateProcedureAsync",
-    "RelativePath": "procedures/update-procedure",
-    "HttpMethod": "PUT",
+    "ContainingType": "CliniCare.API.Controllers.VeterinaryCareController",
+    "Method": "DeleteVeterinaryCareAsync",
+    "RelativePath": "api/vet-care/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "CliniCare.Application.Commands.Procedures.UpdateProcedureCommand",
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinaryCareController",
+    "Method": "GetVeterinaryCareByIdAsync",
+    "RelativePath": "api/vet-care/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -339,8 +477,50 @@
   },
   {
     "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "GetVeterinarianByIdAsync",
+    "RelativePath": "api/veterinarian/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "DeleteVeterinarianAsync",
+    "RelativePath": "api/veterinarian/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
+    "Method": "GetAllVeterinariansAsync",
+    "RelativePath": "api/veterinarian/all-veterinarians",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CliniCare.API.Controllers.VeterinarianController",
     "Method": "UpdateVeterinarianAsync",
-    "RelativePath": "update-veterinarian",
+    "RelativePath": "api/veterinarian/update-veterinarian",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
