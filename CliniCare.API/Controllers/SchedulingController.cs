@@ -1,7 +1,8 @@
 ﻿using CliniCare.Application.Commands.Schedulings;
 using CliniCare.Application.Commands.Schedulings.ConfirmScheduling;
 using CliniCare.Application.Commands.Schedulings.FinalizeScheduling;
-using CliniCare.Application.Commands.Schedulings.InsertScheduling;
+using CliniCare.Application.Commands.Schedulings.InsertSchedulingClient;
+using CliniCare.Application.Commands.Schedulings.InsertSchedulingClinic;
 using CliniCare.Application.Helpers;
 using CliniCare.Application.Queries.Schedulings;
 using CliniCare.Application.Queries.Schedulings.GetAllScheduling;
@@ -27,16 +28,23 @@ namespace CliniCare.API.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> CreateSchedulingAsync([FromBody] InsertSchedulingCommand command)
+        [HttpPost("client")]
+        public async Task<IActionResult> CreateSchedulingByClientAsync([FromBody] InsertSchedulingClientCommand command)
         {
             var result = await _mediator.Send(command);
             if (result.IsSuccess) if (result.IsSuccess) return Created();
            
-            return BadRequest(new { Message = "Não foi possível cadastrar seu agendamento!" });
+            return BadRequest(result.Errors);
+        }
+        [HttpPost("clinic")]
+        public async Task<IActionResult> CreateSchedulingAsync([FromBody] InsertSchedulingClinicCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (result.IsSuccess) if (result.IsSuccess) return Created();
+
+            return BadRequest(result.Errors);
         }
 
-       
         [HttpPatch("{schedulingId}/confirm")]
         public async Task<IActionResult> ConfirmSchedulingAsync(int schedulingId)
         {
@@ -70,6 +78,7 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível cancelar seu agendamento!" });
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetAllSchedulingsAsync()
         {
@@ -80,10 +89,10 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível consultar seu agendamento!" });
         }
 
-        [HttpGet("{userId}/by-client")]
-        public async Task<IActionResult> GetSchedulingByUserIdAsync(int userId)
+        [HttpGet("by-client")]
+        public async Task<IActionResult> GetSchedulingByUserIdAsync()
         {
-            var query = new GetSchedulingsByUserQuery(userId);
+            var query = new GetAllSchedulingsByUserQuery();
             
             var result = await _mediator.Send(query);
 

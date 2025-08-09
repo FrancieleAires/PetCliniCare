@@ -48,6 +48,22 @@ namespace CliniCare.API.Controllers
                 return BadRequest(new { Message = "Não foi possível consultar o veterinário pelo ID." });
             }
         }
+
+        [HttpGet("veterinarian-profile")]
+        public async Task<IActionResult> GetVeterinarianProfileAsync()
+        {
+            var result = await _veterinianService.GetProfileVeterinarianAsync();
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result.Errors);
+            }
+        }
+
         [HttpPut("update-veterinarian")]
         public async Task<IActionResult> UpdateVeterinarianAsync(int id, UpdateVeterinarianInputModel updateVeterinarianInputModel)
         {
@@ -63,6 +79,7 @@ namespace CliniCare.API.Controllers
             }
 
         }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVeterinarianAsync(int id)
         {

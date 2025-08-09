@@ -2,8 +2,9 @@
 using CliniCare.Application.Commands.Animals.InsertAnimal;
 using CliniCare.Application.Commands.Animals.UpdateAnimal;
 using CliniCare.Application.Queries.Animal;
-using CliniCare.Application.Queries.Animal.GetAllAnimal;
+using CliniCare.Application.Queries.Animal.GetAllAnimals;
 using CliniCare.Application.Queries.Animal.GetIdAnimal;
+using CliniCare.Application.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -24,7 +25,7 @@ namespace CliniCare.API.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("register")]
+        [HttpPost()]
         public async Task<IActionResult> CreateAnimalByClientAsync([FromBody] InsertAnimalCommand command)
         {
             var result = await _mediator.Send(command);
@@ -37,7 +38,7 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível criar seu pet." });
         }
 
-        [HttpPut("update")]
+        [HttpPut()]
         public async Task<IActionResult> UpdateAnimalByClientAsync([FromBody] UpdateAnimalCommand command)
         {
             var result = await _mediator.Send(command);
@@ -49,10 +50,10 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível atualizar seu pet." });
         }
 
-        [HttpGet("all-animals/{clientId}")]
-        public async Task<IActionResult> GetAllAnimalsByClientIdAsync(int clientId)
+        [HttpGet()]
+        public async Task<IActionResult> GetAllAnimalsByClientIdAsync()
         {
-            var query = new GetAllAnimalsByClientQuery(clientId); 
+            var query = new GetAllAnimalsByClientQuery(); 
             var result = await _mediator.Send(query);
 
             if (result.IsSuccess)

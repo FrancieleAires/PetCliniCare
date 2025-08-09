@@ -18,7 +18,8 @@ namespace CliniCare.API.Controllers
             _clientService = clientService;
         }
 
-        [HttpGet("all-clients")]
+        [Authorize(Roles = "Admin")]
+        [HttpGet()]
         public async Task<IActionResult> GetAllClientsAsync()
         {
             if (!ModelState.IsValid) return ValidationProblem(ModelState);
@@ -33,7 +34,7 @@ namespace CliniCare.API.Controllers
                 return BadRequest(new { Message = "Não há clientes para consultar." });
             }
 
-        }
+           }
 
         [Authorize(Roles = "Client")]
         [HttpGet("profile-client")]

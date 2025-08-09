@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CliniCare.API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/procedures")]
     public class ProcedureController : ControllerBase
@@ -23,7 +23,7 @@ namespace CliniCare.API.Controllers
             _mediator = mediator;
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpPost("create-procedures")]
         public async Task<IActionResult> CreateProceduresAsync([FromBody] InsertProcedureCommand command)
         {
@@ -32,7 +32,7 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível criar este procedimento." });
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpPut("update-procedure")]
         public async Task<IActionResult> UpdateProcedureAsync([FromBody] UpdateProcedureCommand command)
         {
@@ -41,7 +41,7 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível atualizar este procedimento." });
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProcedureAsync(DeleteProcedureCommand command, int id)
         {
@@ -51,7 +51,7 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível deletar este procedimento." });
 
         }
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpGet("get-all")]
         public async Task<IActionResult> GetAllProceduresAsync()
         {
@@ -62,7 +62,7 @@ namespace CliniCare.API.Controllers
             return BadRequest(new { Message = "Não foi possível deletar este procedimento." });
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProcedureByIdAsync(int id)
         {
