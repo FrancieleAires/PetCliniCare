@@ -12,20 +12,20 @@ using System.Threading.Tasks;
 
 namespace CliniCare.Application.Queries.Schedulings.GetUserIdScheduling
 {
-    public class GetSchedulingByUserHandler : IRequestHandler<GetSchedulingsByUserQuery, Result<List<SchedulingViewModel>>>
+    public class GetAllSchedulingByUserHandler : IRequestHandler<GetAllSchedulingsByUserQuery, Result<List<SchedulingViewModel>>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IApplicationUser _user;
 
-        public GetSchedulingByUserHandler(IUnitOfWork unitOfWork, IApplicationUser user)
+        public GetAllSchedulingByUserHandler(IUnitOfWork unitOfWork, IApplicationUser user)
         {
             _unitOfWork = unitOfWork;
             _user = user;
         }
 
-        public async Task<Result<List<SchedulingViewModel>>> Handle(GetSchedulingsByUserQuery query, CancellationToken cancellationToken)
+        public async Task<Result<List<SchedulingViewModel>>> Handle(GetAllSchedulingsByUserQuery query, CancellationToken cancellationToken)
         {
-            var userId = query.UserId;
+            var userId = _user.Id;
             var client = await _unitOfWork.Clients.GetClientByUserIdAsync(userId);
             if (client == null)
             {

@@ -9,13 +9,12 @@ using System.Threading.Tasks;
 
 namespace CliniCare.Application.Queries.Schedulings.GetUserIdScheduling
 {
-    public class GetSchedulingsByUserQuery : IRequest<Result<List<SchedulingViewModel>>>
+    public class GetAllSchedulingsByUserQuery : IRequest<Result<List<SchedulingViewModel>>>
     {
-        public int UserId { get; set; }
 
-        public GetSchedulingsByUserQuery(int userId)
+        public GetAllSchedulingsByUserQuery()
         {
-            UserId = userId;
+            
         }
     }
 
