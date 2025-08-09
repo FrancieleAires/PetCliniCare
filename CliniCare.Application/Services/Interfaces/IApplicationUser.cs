@@ -9,5 +9,6 @@ namespace CliniCare.Application.Services.Interfaces
     public interface IApplicationUser
     {
          int Id { get; }
+        string Role { get; }
     }
 }

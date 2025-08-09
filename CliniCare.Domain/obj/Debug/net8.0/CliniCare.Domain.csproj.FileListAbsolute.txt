@@ -11,3 +11,16 @@ C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\refi
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.pdb
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\ref\CliniCare.Domain.dll
 C:\Users\faire\source\repos\CliniCare.API\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.sourcelink.json
+C:\Users\faire\PetCliniCare\CliniCare.Domain\bin\Debug\net8.0\CliniCare.Domain.deps.json
+C:\Users\faire\PetCliniCare\CliniCare.Domain\bin\Debug\net8.0\CliniCare.Domain.dll
+C:\Users\faire\PetCliniCare\CliniCare.Domain\bin\Debug\net8.0\CliniCare.Domain.pdb
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.csproj.AssemblyReference.cache
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.AssemblyInfoInputs.cache
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.AssemblyInfo.cs
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.csproj.CoreCompileInputs.cache
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.sourcelink.json
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.dll
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\refint\CliniCare.Domain.dll
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\CliniCare.Domain.pdb
+C:\Users\faire\PetCliniCare\CliniCare.Domain\obj\Debug\net8.0\ref\CliniCare.Domain.dll

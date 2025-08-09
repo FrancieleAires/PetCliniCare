@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj": {}
+    "C:\\Users\\faire\\PetCliniCare\\CliniCare.API\\CliniCare.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj": {
+    "C:\\Users\\faire\\PetCliniCare\\CliniCare.API\\CliniCare.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
+        "projectUniqueName": "C:\\Users\\faire\\PetCliniCare\\CliniCare.API\\CliniCare.API.csproj",
         "projectName": "CliniCare.API",
-        "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\CliniCare.API.csproj",
+        "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.API\\CliniCare.API.csproj",
         "packagesPath": "C:\\Users\\faire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.API\\obj\\",
+        "outputPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\faire\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj": {
-                "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj"
+              "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj": {
+                "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj"
               },
-              "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj"
+              "C:\\Users\\faire\\PetCliniCare\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj"
               }
             }
           }
@@ -52,7 +50,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -82,22 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj": {
+    "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj",
+        "projectUniqueName": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj",
         "projectName": "CliniCare.Application",
-        "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj",
+        "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj",
         "packagesPath": "C:\\Users\\faire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\obj\\",
+        "outputPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\faire\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,15 +107,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj": {
-                "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj"
+              "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj": {
+                "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj"
               }
             }
           }
@@ -131,7 +128,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -162,22 +160,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj": {
+    "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj",
         "projectName": "CliniCare.Domain",
-        "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj",
+        "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj",
         "packagesPath": "C:\\Users\\faire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\obj\\",
+        "outputPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\faire\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -189,7 +186,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -207,7 +203,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -238,22 +235,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj": {
+    "C:\\Users\\faire\\PetCliniCare\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
         "projectName": "CliniCare.Infrastructure",
-        "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Infrastructure\\CliniCare.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\faire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\faire\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -265,18 +261,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj": {
-                "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Application\\CliniCare.Application.csproj"
+              "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj": {
+                "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Application\\CliniCare.Application.csproj"
               },
-              "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj": {
-                "projectPath": "C:\\Users\\faire\\source\\repos\\CliniCare.API\\CliniCare.Domain\\CliniCare.Domain.csproj"
+              "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj": {
+                "projectPath": "C:\\Users\\faire\\PetCliniCare\\CliniCare.Domain\\CliniCare.Domain.csproj"
               }
             }
           }
@@ -290,7 +285,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -320,9 +316,9 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -341,7 +337,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400-preview.0.24324.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

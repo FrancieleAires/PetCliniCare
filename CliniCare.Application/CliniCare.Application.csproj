@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Queries\Animal\GetAllAnimal\**" />
     <Compile Remove="ViewModel\**" />
+    <EmbeddedResource Remove="Queries\Animal\GetAllAnimal\**" />
     <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="Queries\Animal\GetAllAnimal\**" />
     <None Remove="ViewModel\**" />
   </ItemGroup>
 
