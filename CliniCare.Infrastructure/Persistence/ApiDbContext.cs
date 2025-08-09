@@ -14,6 +14,10 @@ namespace CliniCare.Infrastructure.Persistence
 {
     public class ApiDbContext : IdentityDbContext<ApplicationUser, Role, int>
     {
+        public ApiDbContext(DbContextOptions options) : base(options)
+        {
+
+        }
 
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Veterinarian> Veterinarians { get; set; }
@@ -25,11 +29,6 @@ namespace CliniCare.Infrastructure.Persistence
         public DbSet<Role> Roles {  get; set; }
         public DbSet<Scheduling> Schedulings { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var connectionString = "Server=localhost;Port=3306;Database=bd_clinicare;Uid=root;Pwd=root;";
-            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

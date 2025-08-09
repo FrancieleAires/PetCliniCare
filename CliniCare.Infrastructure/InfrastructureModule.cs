@@ -8,6 +8,7 @@ using CliniCare.Infrastructure.Repository;
 using CliniCare.Infrastructure.Seeders;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -23,7 +24,9 @@ namespace CliniCare.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ApiDbContext>();
+            services.AddDbContext<ApiDbContext>(
+                p => p.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+
             services.AddScoped<ApiDbContext>();
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IAnimalRepository, AnimalRepository>();
@@ -32,6 +35,7 @@ namespace CliniCare.Infrastructure
             services.AddScoped<IVeterinaryProcedureRepository, VeterinaryProcedureRepository>();
             services.AddScoped<ISchedulingRepository, SchedulingRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
             services.AddIdentity<ApplicationUser, Role>()
                     .AddRoles<Role>()
@@ -71,6 +75,18 @@ namespace CliniCare.Infrastructure
                 options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
                 options.AddPolicy("ClientOnly", policy => policy.RequireRole("Client"));
             });
+
+            services.AddCors(options =>
+            {
+               options.AddPolicy("Development", builder =>
+                {
+                    builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
+
             return services;
         }
     }
