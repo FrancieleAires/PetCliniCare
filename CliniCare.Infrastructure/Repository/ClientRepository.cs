@@ -34,6 +34,7 @@ namespace CliniCare.Infrastructure.Repository
         {
             return await _dbContext.Clients
                 .Include(c => c.ApplicationUser)
+                .Include(c => c.Animals)
                 .ToListAsync();
         }
 

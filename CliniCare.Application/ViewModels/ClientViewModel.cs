@@ -15,5 +15,6 @@ namespace CliniCare.Application.ViewModels
         public string Address { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
+        public List<AnimalViewModel> Animals { get; set; } = new List<AnimalViewModel>();
     }
 }

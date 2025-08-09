@@ -97,7 +97,7 @@ namespace CliniCare.Application.Services.Implementations
             if (!user.Any())
             {
                 return Result<IEnumerable<ClientViewModel>>.Failure("Nenhum cliente para consultar");
-            }
+            } 
 
             var clients = user.Select(c => new ClientViewModel
             {
@@ -107,6 +107,13 @@ namespace CliniCare.Application.Services.Implementations
                 Address = c.Address,
                 Email = c.ApplicationUser.Email,
                 Phone = c.ApplicationUser.PhoneNumber,
+                Animals = c.Animals.Select(a => new AnimalViewModel
+                {
+                    Id = a.Id,
+                    Name = a.Name,
+                    Breed = a.Breed,
+ 
+                }).ToList()
             });
 
             return Result<IEnumerable<ClientViewModel>>.Success(clients);

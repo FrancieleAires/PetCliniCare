@@ -123,6 +123,31 @@ namespace CliniCare.Application.Services.Implementations
             }
         }
 
+        public async Task<Result<VeterinarianViewModel>> GetProfileVeterinarianAsync()
+        {
+            var userId = _user.Id;
+
+            var userLogado = await _veterinarianRepository.GetCurrentVeterinarianAsync(userId);
+            if (userLogado == null)
+            {
+                return Result<VeterinarianViewModel>.Failure("Usuário não encontrado.");
+
+            }
+
+            var veterinarian = new VeterinarianViewModel
+            {
+                Id = userLogado.Id,
+                Name = userLogado.Name,
+                CRMV = userLogado.CRMV,
+                Specialty = userLogado.Specialty,
+                Email = userLogado.ApplicationUser.Email = null!
+
+            };
+
+            return Result<VeterinarianViewModel>.Success(veterinarian);
+        }
+
+
         public async Task<Result<IEnumerable<VeterinarianViewModel>>> GetAllVeterinariansAsync()
         {
             var users = await _veterinarianRepository.GetAllVeterinarianAsync();
@@ -138,7 +163,7 @@ namespace CliniCare.Application.Services.Implementations
                 Specialty = c.Specialty,
                 CRMV = c.CRMV,
                 Name = c.Name,
-                Email = c.ApplicationUser.Email,
+                Email = c.ApplicationUser.Email, 
             });
 
             return Result<IEnumerable<VeterinarianViewModel>>.Success(veterinarians);

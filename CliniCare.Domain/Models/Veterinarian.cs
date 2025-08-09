@@ -13,6 +13,6 @@ namespace CliniCare.Domain.Models
         public string Name { get; set; }
         public string Specialty { get; set; }
         public int ApplicationUserId { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public ApplicationUser ApplicationUser { get; set; } = null!;
     }
 }

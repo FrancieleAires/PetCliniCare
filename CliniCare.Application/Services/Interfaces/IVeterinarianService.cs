@@ -13,6 +13,7 @@ namespace CliniCare.Application.Services.Interfaces
         Task<Result<Unit>> CreateVeterinarianAsync(CreateVeterinarianInputModel createVeterinarianInputModel);
         Task<Result<string>> LoginVeterinarianAsync(LoginVeterinarianInputModel loginVeterinarianInputModel);
         Task<Result<Unit>> UpdateVeterinarianAsync(int veterinarianId, UpdateVeterinarianInputModel updateVeterinarianInputModel);
+        Task<Result<VeterinarianViewModel>> GetProfileVeterinarianAsync();
         Task<Result<IEnumerable<VeterinarianViewModel>>> GetAllVeterinariansAsync();
         Task<Result<VeterinarianViewModel>> GetVeterinarianByIdAsync(int id);
         Task<Result<Unit>> DeleteVeterinarianAsync(int id);
