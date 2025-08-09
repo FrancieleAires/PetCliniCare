@@ -45,13 +45,5 @@ namespace CliniCare.Application.Commands.Animals.InsertAnimal
 
         }
 
-        private bool BeAValidUserId(string userId)
-        {
-            if (string.IsNullOrEmpty(userId))
-                return false;
-
-            return int.TryParse(userId, out int result) && result > 0;
-        }
-
     }
 }

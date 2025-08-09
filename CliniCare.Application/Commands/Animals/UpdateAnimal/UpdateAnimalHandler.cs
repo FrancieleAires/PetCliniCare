@@ -30,7 +30,7 @@ namespace CliniCare.Application.Commands.Animals.UpdateAnimal
             {
                 return Result<Unit>.Failure("Cliente não encontrado para este usuário.");
             }
-            var animal = await _unitOfWork.Animals.GetAnimalByClientIdAsync(request.Id);
+            var animal = await _unitOfWork.Animals.GetAnimalByClientIdAsync(request.Id, userId);
             if (animal == null) return Result<Unit>.Failure("Nenhum animal encontrado para este usuário.");
 
             if (animal.ClientId != client.Id)
