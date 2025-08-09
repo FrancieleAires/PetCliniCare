@@ -11,7 +11,11 @@ namespace CliniCare.API
             _httpContextAccessor = contextAccessor;
         }
 
-        public int Id => int.Parse(_httpContextAccessor.HttpContext?.User?.Claims.FirstOrDefault(c => c.Type.Equals(ClaimTypes.NameIdentifier))!.Value!);
+        public int Id => int.Parse(_httpContextAccessor.HttpContext?.User?
+            .Claims.FirstOrDefault(c => c.Type.Equals(ClaimTypes.NameIdentifier))!.Value!);
+
+        public string Role => _httpContextAccessor.HttpContext?.User?
+            .Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)!.Value!;
 
 
     }
