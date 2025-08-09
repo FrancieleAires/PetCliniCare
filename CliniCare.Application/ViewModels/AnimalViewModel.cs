@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CliniCare.Application.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,6 @@ namespace CliniCare.Application.ViewModels
         public string Breed { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Gender { get; set; }
+        public int Age => Date.CalculateAge(DateOfBirth);
     }
 }

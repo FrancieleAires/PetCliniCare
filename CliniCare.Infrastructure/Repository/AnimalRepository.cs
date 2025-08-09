@@ -35,18 +35,23 @@ namespace CliniCare.Infrastructure.Repository
 
         }
 
-        public async Task<IEnumerable<Animal>> GetAllAnimalAsync(int clientId)
+        public async Task<IEnumerable<Animal>> GetAllAnimalsByClientAsync(int clientId)
         {
             return await _dbContext.Animals
                 .Where(a => a.ClientId == clientId)
                 .ToListAsync();
         }
+        public async Task<List<Animal>> GetAllAnimalsAsync()
+        {
+            return await _dbContext.Animals
+                .ToListAsync();
+        }
 
-        public async Task<Animal?> GetAnimalByClientIdAsync(int id)
+        public async Task<Animal?> GetAnimalByClientIdAsync(int id, int clientId)
         {
             return await _dbContext.Animals
                 .Include(c => c.Client)
-                .FirstOrDefaultAsync(a => a.Id == id);
+                .FirstOrDefaultAsync(a => a.Id == id && a.ClientId == clientId);
         }
 
         public async Task<Animal?> GetAnimalByIdAsync(int id)
